@@ -29,10 +29,7 @@ struct HomePage: Page {
             .backgroundGradient(.radial(color: .accent, opacity: 0.04, width: 120, height: 80, at: .top))
             .compact { $0.padding(80, at: .vertical).padding(20, at: .horizontal) }
 
-            HorizontalRule()
-                .background(.border)
-                .size(height: 1)
-                .border(width: 0, color: .border, style: .none)
+            Divider()
 
             Section {
                 SectionLabel(title: "Products")
@@ -41,25 +38,25 @@ struct HomePage: Page {
                     ProductCard(
                         title: "Score",
                         description: "The Swift web framework. Write components, compile to HTML, CSS and JS.",
-                        accentColor: .custom("score", shade: 500),
+                        accentColor: .score,
                         link: "/score"
                     )
                     ProductCard(
                         title: "Stage",
                         description: "The hosting and operations layer. Deploy, scale and observe Score applications.",
-                        accentColor: .custom("stage", shade: 500),
+                        accentColor: .stage,
                         comingSoon: true
                     )
                     ProductCard(
                         title: "Composer",
                         description: "The native macOS and iPad visual editor. Build Score UIs without touching the compiler.",
-                        accentColor: .custom("composer", shade: 500),
+                        accentColor: .composer,
                         comingSoon: true
                     )
                     ProductCard(
                         title: "Libretto",
                         description: "The first-party reference application. A proof-of-concept built entirely on Score and Stage.",
-                        accentColor: .custom("libretto", shade: 500),
+                        accentColor: .libretto,
                         comingSoon: true
                     )
                 }
@@ -72,10 +69,7 @@ struct HomePage: Page {
             .padding(56, at: .horizontal)
             .compact { $0.padding(60, at: .vertical).padding(20, at: .horizontal) }
 
-            HorizontalRule()
-                .background(.border)
-                .size(height: 1)
-                .border(width: 0, color: .border, style: .none)
+            Divider()
 
             Section {
                 SectionLabel(title: "Why Allegro")
@@ -106,11 +100,6 @@ struct HomePage: Page {
             .padding(56, at: .horizontal)
             .compact { $0.padding(60, at: .vertical).padding(20, at: .horizontal) }
 
-            HorizontalRule()
-                .background(.border)
-                .size(height: 1)
-                .border(width: 0, color: .border, style: .none)
-
             Section {
                 SectionLabel(title: "Documentation")
 
@@ -118,19 +107,19 @@ struct HomePage: Page {
                     DocCard(
                         title: "Score Docs",
                         description: "Guides, API reference and tutorials for the Score framework.",
-                        accentColor: .custom("score", shade: 500),
+                        accentColor: .score,
                         link: "/docs/score"
                     )
                     DocCard(
                         title: "Stage Docs",
                         description: "Deployment guides, scaling configuration and observability setup.",
-                        accentColor: .custom("stage", shade: 500),
+                        accentColor: .stage,
                         comingSoon: true
                     )
                     DocCard(
                         title: "Composer Docs",
                         description: "Visual editor workflows, component library and export options.",
-                        accentColor: .custom("composer", shade: 500),
+                        accentColor: .composer,
                         comingSoon: true
                     )
                 }

@@ -7,7 +7,7 @@ struct NotFoundPage: Page {
         Layout {
             Section {
                 Text { "404" }
-                    .font(.serif, size: 120, weight: .light, color: .custom("dimmer", shade: 500))
+                    .font(.serif, size: 120, weight: .light, color: .dimmer)
                     .compact { $0.font(size: 96) }
 
                 Heading(.one) { "Page not found" }
@@ -24,11 +24,6 @@ struct NotFoundPage: Page {
             .flex(.column, gap: 24, align: .center, justify: .center)
             .size(minHeight: 600)
             .backgroundGradient(.radial(color: .accent, opacity: 0.04, width: 100, height: 100, at: .center))
-
-            HorizontalRule()
-                .background(.border)
-                .size(height: 1)
-                .border(width: 0, color: .border, style: .none)
         }
     }
 }
