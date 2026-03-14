@@ -25,7 +25,7 @@ struct DocCard: Component {
     }
 
     var body: some Node {
-        Stack {
+        let card = Stack {
             Stack {}
                 .size(width: 32, height: 3)
                 .background(accentColor)
@@ -47,9 +47,9 @@ struct DocCard: Component {
             Paragraph { description }
                 .font(.mono, size: 13, lineHeight: 1.6, color: comingSoon ? .dimmer : .muted, align: .start)
 
-            if let link {
-                Link(to: link) { "Read docs \u{2192}" }
-                    .font(.mono, size: 13, weight: .medium, color: accentColor, decoration: TextDecoration.none)
+            if link != nil {
+                Text { "Read docs \u{2192}" }
+                    .font(.mono, size: 13, weight: .medium, color: accentColor)
             }
         }
         .flex(.column, gap: 16)
@@ -57,5 +57,16 @@ struct DocCard: Component {
         .size(minHeight: 180)
         .background(filled ? .surface : .bg)
         .border(width: 1, color: .border, style: .solid)
+        .hover(.borderColor(accentColor))
+        .transition(property: .borderColor, duration: 0.15, timing: .ease)
+
+        if let link {
+            Link(to: link) { card }
+                .font(color: .text, decoration: TextDecoration.none)
+                .hover(.textDecoration(.none))
+                .cursor(.pointer)
+        } else {
+            card
+        }
     }
 }

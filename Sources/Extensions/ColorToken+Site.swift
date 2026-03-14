@@ -2,13 +2,13 @@ import Score
 
 /// Site-specific custom color tokens defined in `AllegroTheme`.
 extension ColorToken {
-    static let bg = ColorToken.custom("bg", shade: 500)
-    static let elevated = ColorToken.custom("elevated", shade: 500)
-    static let dimmer = ColorToken.custom("dimmer", shade: 500)
-    static let score = ColorToken.custom("score", shade: 500)
-    static let stage = ColorToken.custom("stage", shade: 500)
-    static let composer = ColorToken.custom("composer", shade: 500)
-    static let libretto = ColorToken.custom("libretto", shade: 500)
-    static let sun = ColorToken.custom("sun", shade: 500)
-    static let moon = ColorToken.custom("moon", shade: 500)
+    static let bg = ColorToken("bg")
+    static let elevated = ColorToken("elevated")
+    static let dimmer = ColorToken("dimmer")
+    static let score = ColorToken("score")
+    static let stage = ColorToken("stage")
+    static let composer = ColorToken("composer")
+    static let libretto = ColorToken("libretto")
+    static let sun = ColorToken("sun")
+    static let moon = ColorToken("moon")
 }

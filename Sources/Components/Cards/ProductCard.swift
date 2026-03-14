@@ -22,7 +22,7 @@ struct ProductCard: Component {
     }
 
     var body: some Node {
-        Stack {
+        let card = Stack {
             Stack {}
                 .size(width: 32, height: 3)
                 .background(accentColor)
@@ -46,9 +46,9 @@ struct ProductCard: Component {
                 .font(.mono, size: 13, lineHeight: 1.6, color: .muted, align: .start)
                 .flexItem(grow: 1)
 
-            if let link {
-                Link(to: link) { "Learn more \u{2192}" }
-                    .font(.mono, size: 13, weight: .medium, color: accentColor, decoration: TextDecoration.none)
+            if link != nil {
+                Text { "Learn more \u{2192}" }
+                    .font(.mono, size: 13, weight: .medium, color: accentColor)
             } else {
                 Stack {}
                     .size(height: 17)
@@ -58,5 +58,16 @@ struct ProductCard: Component {
         .padding(28)
         .size(minHeight: 190)
         .border(width: 1, color: .border, style: .solid)
+        .hover(.borderColor(accentColor))
+        .transition(property: .borderColor, duration: 0.15, timing: .ease)
+
+        if let link {
+            Link(to: link) { card }
+                .font(color: .text, decoration: TextDecoration.none)
+                .hover(.textDecoration(.none))
+                .cursor(.pointer)
+        } else {
+            card
+        }
     }
 }

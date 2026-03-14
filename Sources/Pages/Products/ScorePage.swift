@@ -207,6 +207,13 @@ struct ScorePage: Page {
                                     showsHeader: false
                                 )
                             }
+                            Tab("Result") {
+                                Stack {
+                                    Counter()
+                                }
+                                .flex(.column, gap: 12, align: .start)
+                                .padding(24)
+                            }
                         }
                     }
                     .flex(.column, gap: 8)

@@ -16,7 +16,7 @@ struct NavDropdownItem: Component {
                 Text { title }
                     .font(.serif, size: 15, weight: .light, color: .text)
 
-                Paragraph { description }
+                Text { description }
                     .font(.mono, size: 11, color: .muted)
             }
             .flex(.column)

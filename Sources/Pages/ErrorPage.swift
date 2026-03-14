@@ -1,7 +1,7 @@
 import Score
 
-struct NotFoundPage: Page {
-    static let path = "/404"
+struct NotFoundPage: ErrorPage {
+    var context: ErrorContext
 
     var body: some Node {
         Layout {

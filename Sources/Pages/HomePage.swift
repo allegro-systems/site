@@ -60,8 +60,8 @@ struct HomePage: Page {
                         comingSoon: true
                     )
                 }
-                .grid(columns: 4, gap: 20)
-                .tablet { $0.grid(columns: 2, gap: 20) }
+                .grid(columns: 2, gap: 20)
+                .desktop { $0.grid(columns: 4, gap: 20) }
                 .compact { $0.grid(columns: 1, gap: 16) }
             }
             .flex(.column, gap: 40)

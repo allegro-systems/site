@@ -18,8 +18,7 @@ struct AllegroSite: Application {
         DocsPage()
         AboutPage()
         BlogPage()
-        NotFoundPage()
     }
 
-    var errorPage: (any ErrorPage.Type)? { nil }
+    var errorPage: (any ErrorPage.Type)? { NotFoundPage.self }
 }
