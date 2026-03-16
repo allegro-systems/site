@@ -64,36 +64,6 @@ targets: [
 ]
 ```
 
-## Building & Running
+## Development
 
-### Score CLI (recommended)
-
-The Score CLI provides a development server with hot reload and production builds.
-
-```bash
-score dev                  # Start dev server on port 8080
-score dev --port 3000      # Custom port
-score dev --no-devtools    # Disable dev tools overlay
-```
-
-```bash
-score build                # Production build
-```
-
-The dev server watches `Sources/` and `Content/` for changes and automatically rebuilds. Dev tools are injected by default, providing source-map overlays and click-to-open-in-editor support.
-
-### Swift directly
-
-```bash
-swift build
-swift run
-```
-
-The rendered site is output to `.build/score/`.
-
-## Formatting
-
-```bash
-make format
-make lint
-```
+All tasks are managed via `mise` and can be analyzed by running `mise run {task} --help` to see the task's description and options.
