@@ -4,7 +4,8 @@ import Score
 ///
 /// Demonstrates `@State` and `@Action` with a reactive text binding
 /// and a click event handler.
-struct Counter: Component {
+@Component
+struct Counter {
     @State var count = 0
 
     @Action

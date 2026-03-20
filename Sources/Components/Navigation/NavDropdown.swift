@@ -1,6 +1,8 @@
 import Score
+import ScoreLucide
 
-struct NavDropdownItem: Component {
+@Component
+struct NavDropdownItem {
     let title: String
     let description: String
     let accentColor: ColorToken
@@ -25,7 +27,7 @@ struct NavDropdownItem: Component {
         .padding(8, at: .vertical)
         .padding(12, at: .horizontal)
         .font(decoration: TextDecoration.none)
-        .hover(.background(.elevated))
+        .hover { $0.background(.elevated) }
         .radius(6)
     }
 }
@@ -76,30 +78,31 @@ struct NavDropdown<Content: Node>: Component {
     }
 }
 
-struct ProductsDropdown: Component {
+@Component
+struct ProductsDropdown {
     var body: some Node {
-        NavDropdown(label: "Products", link: "/products") {
+        NavDropdown(label: t("nav.products"), link: "/products") {
             NavDropdownItem(
-                title: "Score",
-                description: "Swift web framework for components, HTML, CSS & JS",
+                title: t("nav.products.score"),
+                description: t("nav.products.score.desc"),
                 accentColor: .score,
                 link: "/score"
             )
             NavDropdownItem(
-                title: "Stage",
-                description: "Deploy, scale and observe Score applications",
+                title: t("nav.products.stage"),
+                description: t("nav.products.stage.desc"),
                 accentColor: .stage,
                 link: "/stage"
             )
             NavDropdownItem(
-                title: "Composer",
-                description: "Native macOS & iPad visual editor for Score UIs",
+                title: t("nav.products.composer"),
+                description: t("nav.products.composer.desc"),
                 accentColor: .composer,
                 link: "/composer"
             )
             NavDropdownItem(
-                title: "Libretto",
-                description: "Reference app built entirely on Score and Stage",
+                title: t("nav.products.libretto"),
+                description: t("nav.products.libretto.desc"),
                 accentColor: .libretto,
                 link: "/libretto"
             )
@@ -107,24 +110,25 @@ struct ProductsDropdown: Component {
     }
 }
 
-struct DocsDropdown: Component {
+@Component
+struct DocsDropdown {
     var body: some Node {
-        NavDropdown(label: "Documentation", link: "/docs", panelWidth: 400) {
+        NavDropdown(label: t("nav.documentation"), link: "/docs", panelWidth: 400) {
             NavDropdownItem(
-                title: "Score",
-                description: "Guides, API reference and tutorials",
+                title: t("nav.products.score"),
+                description: t("nav.docs.score.desc"),
                 accentColor: .score,
                 link: "/docs/score"
             )
             NavDropdownItem(
-                title: "Stage",
-                description: "Deployment guides and scaling configuration",
+                title: t("nav.products.stage"),
+                description: t("nav.docs.stage.desc"),
                 accentColor: .stage,
                 link: "/docs/stage"
             )
             NavDropdownItem(
-                title: "Composer",
-                description: "Visual editor workflows and component library",
+                title: t("nav.products.composer"),
+                description: t("nav.docs.composer.desc"),
                 accentColor: .composer,
                 link: "/docs/composer"
             )

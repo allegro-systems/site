@@ -6,20 +6,18 @@ struct ScorePage: Page {
     var body: some Node {
         Layout {
             Section {
-                Text { "Score" }
-                    .font(.mono, size: 11, weight: .medium, tracking: 1, color: .score)
-                    .padding(5, at: .vertical)
-                    .padding(14, at: .horizontal)
-                    .border(width: 1, color: .score, style: .solid)
+                ProductPill(title: "Score", color: .score)
 
                 Stack {
                     Heading(.one) { "The Swift Web Framework" }
                         .font(.serif, size: 56, weight: .light, lineHeight: 1.15, color: .text, align: .center, wrap: .balance)
                         .size(maxWidth: 740)
                         .compact { $0.font(size: 36) }
+                        .animate(.fadeIn, duration: 0.6)
 
                     Text { "The Swift web framework" }
                         .font(.mono, size: 15, color: .muted)
+                        .animate(.fadeIn, duration: 0.6, delay: 0.1)
                 }
                 .flex(.column, gap: 8, align: .center)
 
@@ -33,6 +31,10 @@ struct ScorePage: Page {
                 }
                 .flex(.row, gap: 16, align: .center)
                 .compact { $0.flex(.column, gap: 12).size(width: .percent(100)) }
+
+                if Environment.current == .development {
+                    DevToolsToggle()
+                }
             }
             .flex(.column, gap: 24, align: .center)
             .padding(100, at: .vertical)
@@ -48,16 +50,18 @@ struct ScorePage: Page {
                     .compact { $0.font(size: 28) }
 
                 Stack {
-                    ScoreFeatureCard(
+                    FeatureCard(
                         icon: "file-text",
                         title: "Write Pages in Swift",
                         description: "Define layouts, components, and content with Swift result builders. No templates or string wrangling.",
+                        accentColor: .score,
                         large: true
                     )
-                    ScoreFeatureCard(
+                    FeatureCard(
                         icon: "zap",
                         title: "Reactive UI",
                         description: "Add interactive elements with signals. State changes update the page instantly, no full reload needed.",
+                        accentColor: .score,
                         large: true
                     )
                 }
@@ -65,30 +69,34 @@ struct ScorePage: Page {
                 .compact { $0.grid(columns: 1, gap: 16) }
 
                 Stack {
-                    ScoreFeatureCard(
+                    FeatureCard(
                         icon: "palette",
                         title: "Themeable by Default",
-                        description: "Set colours, fonts, spacing, and dark mode once. Every component picks them up automatically."
+                        description: "Set colours, fonts, spacing, and dark mode once. Every component picks them up automatically.",
+                        accentColor: .score
                     )
-                    ScoreFeatureCard(
+                    FeatureCard(
                         icon: "database",
                         title: "Built-in Persistence",
-                        description: "Store and query data without bolting on an ORM. Entities, migrations, and queries are part of the framework."
+                        description: "Store and query data without bolting on an ORM. Entities, migrations, and queries are part of the framework.",
+                        accentColor: .score
                     )
                 }
                 .grid(columns: 2, gap: 20)
                 .compact { $0.grid(columns: 1, gap: 16) }
 
                 Stack {
-                    ScoreFeatureCard(
+                    FeatureCard(
                         icon: "lock",
                         title: "Auth Out of the Box",
-                        description: "Add login, sessions, and route guards with a few lines. Vendor integrations handle the provider details."
+                        description: "Add login, sessions, and route guards with a few lines. Vendor integrations handle the provider details.",
+                        accentColor: .score
                     )
-                    ScoreFeatureCard(
+                    FeatureCard(
                         icon: "package",
                         title: "Ship as Static or Server",
-                        description: "Generate a static site or run a live server from the same codebase. One command either way."
+                        description: "Generate a static site or run a live server from the same codebase. One command either way.",
+                        accentColor: .score
                     )
                 }
                 .grid(columns: 2, gap: 20)

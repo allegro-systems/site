@@ -1,6 +1,8 @@
 import Score
+import ScoreLucide
 
-struct SiteFooter: Component {
+@Component
+struct SiteFooter {
 
     var body: some Node {
         Footer {
@@ -8,7 +10,7 @@ struct SiteFooter: Component {
                 Stack {
                     SiteLogo()
 
-                    Paragraph { "Taking your ideas from score to stage." }
+                    Paragraph { Localized("footer.tagline") }
                         .font(.mono, size: 12, color: .dimmer)
                 }
                 .flex(.column, gap: 8, align: .start)
@@ -16,13 +18,13 @@ struct SiteFooter: Component {
                 .compact { $0.flex(.column, gap: 8, align: .center) }
 
                 Navigation {
-                    Link(to: "/products") { "Products" }
+                    Link(to: "/products") { Localized("nav.products") }
                         .font(.mono, size: 13, color: .muted, decoration: TextDecoration.none)
-                    Link(to: "/docs") { "Docs" }
+                    Link(to: "/docs") { Localized("nav.docs") }
                         .font(.mono, size: 13, color: .muted, decoration: TextDecoration.none)
-                    Link(to: "/about") { "About" }
+                    Link(to: "/about") { Localized("nav.about") }
                         .font(.mono, size: 13, color: .muted, decoration: TextDecoration.none)
-                    Link(to: "/blog") { "Blog" }
+                    Link(to: "/blog") { Localized("nav.blog") }
                         .font(.mono, size: 13, color: .muted, decoration: TextDecoration.none)
                 }
                 .flex(.row, gap: 24, align: .start, justify: .center)
@@ -40,7 +42,7 @@ struct SiteFooter: Component {
             .compact { $0.flex(.column, gap: 24, align: .center) }
 
             Stack {
-                Paragraph { "\u{00A9} 2026 Allegro Systems. All rights reserved." }
+                Paragraph { Localized("footer.copyright") }
                     .font(.mono, size: 11, color: .dimmer)
                     .compact { $0.font(size: 10) }
             }

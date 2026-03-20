@@ -5,7 +5,8 @@ enum SiteButtonVariant {
     case secondary
 }
 
-struct SiteButton: Component {
+@Component
+struct SiteButton {
     let title: String
     let link: String
     let variant: SiteButtonVariant
@@ -19,7 +20,7 @@ struct SiteButton: Component {
                 .padding(14, at: .vertical)
                 .padding(28, at: .horizontal)
                 .background(background)
-                .hover(.opacity(0.85))
+                .hover { $0.opacity(0.85) }
 
         case .secondary:
             Link(to: link, opensInNewTab: opensInNewTab) { title }
@@ -27,7 +28,7 @@ struct SiteButton: Component {
                 .padding(14, at: .vertical)
                 .padding(28, at: .horizontal)
                 .border(width: 1, color: .border, style: .solid)
-                .hover(.background(.elevated))
+                .hover { $0.background(.elevated) }
         }
     }
 }

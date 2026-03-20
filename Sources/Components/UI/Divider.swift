@@ -1,7 +1,8 @@
 import Score
 
 /// A horizontal divider line styled with the theme border color.
-struct Divider: Component {
+@Component
+struct Divider {
     var body: some Node {
         HorizontalRule()
             .background(.border)

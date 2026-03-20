@@ -9,7 +9,12 @@ struct ComposerPage: Page {
             accentColor: .composer,
             heading: "The Visual Editor\nfor macOS and iPad",
             subtitle: "The native macOS and iPad visual editor",
-            description: "A native visual editor for macOS and iPad that lets you design and build Score projects without writing code. Drag-and-drop components, live preview, and deterministic production builds powered by Stage. Coming soon.",
+            description: """
+                A native visual editor for macOS and iPad that lets you design \
+                and build Score projects without writing code. Drag-and-drop \
+                components, live preview, and deterministic production builds \
+                powered by Stage. Coming soon.
+                """,
             highlights: "Visual-First Onboarding  \u{00B7}  Single-Worker Model  \u{00B7}  Deterministic Builds via Stage",
             gradient: .radial(color: .composer, opacity: 0.04, width: 100, height: 100, at: .center),
             features: [

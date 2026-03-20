@@ -1,38 +1,25 @@
 import Score
 
-struct ProductCard: Component {
+@Component
+struct ProductCard {
     let title: String
     let description: String
     let accentColor: ColorToken
-    let link: String?
-    let comingSoon: Bool
-
-    init(
-        title: String,
-        description: String,
-        accentColor: ColorToken,
-        link: String? = nil,
-        comingSoon: Bool = false
-    ) {
-        self.title = title
-        self.description = description
-        self.accentColor = accentColor
-        self.link = link
-        self.comingSoon = comingSoon
-    }
+    var link: String? = nil
+    var comingSoon: Bool = false
 
     var body: some Node {
         let card = Stack {
             Stack {}
-                .size(width: 32, height: 3)
+                .size(width: 24, height: 3)
                 .background(accentColor)
 
             Stack {
                 Heading(.three) { title }
-                    .font(.serif, size: 24, weight: .light, color: .text)
+                    .font(.serif, size: 20, weight: .light, color: .text)
 
                 if comingSoon {
-                    Text { "Coming Soon" }
+                    Text { Localized("ui.coming_soon") }
                         .font(.mono, size: 10, color: .muted)
                         .padding(3, at: .vertical)
                         .padding(8, at: .horizontal)
@@ -47,24 +34,23 @@ struct ProductCard: Component {
                 .flexItem(grow: 1)
 
             if link != nil {
-                Text { "Learn more \u{2192}" }
+                Text { Localized("ui.learn_more") }
                     .font(.mono, size: 13, weight: .medium, color: accentColor)
             } else {
                 Stack {}
                     .size(height: 17)
             }
         }
-        .flex(.column, gap: 16)
-        .padding(28)
-        .size(minHeight: 190)
+        .flex(.column, gap: 12)
+        .padding(20)
         .border(width: 1, color: .border, style: .solid)
-        .hover(.borderColor(accentColor))
+        .hover { $0.borderColor(accentColor) }
         .transition(property: .borderColor, duration: 0.15, timing: .ease)
 
         if let link {
             Link(to: link) { card }
                 .font(color: .text, decoration: TextDecoration.none)
-                .hover(.textDecoration(.none))
+                .hover { $0.font(decoration: TextDecoration.none) }
                 .cursor(.pointer)
         } else {
             card

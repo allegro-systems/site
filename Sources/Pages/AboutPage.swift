@@ -10,11 +10,13 @@ struct AboutPage: Page {
                     .font(.serif, size: 56, weight: .light, lineHeight: 1.15, color: .text, align: .center, wrap: .balance)
                     .size(maxWidth: 740)
                     .compact { $0.font(size: 36) }
+                    .animate(.fadeIn, duration: 0.6)
 
                 Paragraph { "We build tools for the long-term web \u{2014} software that respects the craft of development and the patience of good design." }
                     .font(.mono, size: 15, lineHeight: 1.6, color: .muted, align: .center)
                     .size(maxWidth: 640)
                     .compact { $0.font(size: 14) }
+                    .animate(.fadeIn, duration: 0.6, delay: 0.15)
             }
             .flex(.column, gap: 24, align: .center)
             .padding(120, at: .vertical)
@@ -136,7 +138,7 @@ struct AboutPage: Page {
                     Stack {
                         AvoidItem(title: "Deep navigation")
                         AvoidItem(title: "Loading spinners")
-                        AvoidItem(title: "Decorative motion")
+                        AvoidItem(title: "Excessive decorative motion")
                     }
                     .flex(.column, gap: 20)
                 }
@@ -148,40 +150,5 @@ struct AboutPage: Page {
             .padding(56, at: .horizontal)
             .compact { $0.padding(60, at: .vertical).padding(20, at: .horizontal) }
         }
-    }
-}
-
-struct AvoidItem: Component {
-    let title: String
-
-    var body: some Node {
-        Stack {
-            Icon("x", size: 16, color: .muted)
-
-            Text { title }
-                .font(.mono, size: 14, color: .text)
-        }
-        .flex(.row, gap: 16, align: .center)
-        .padding(24, at: .vertical)
-        .padding(28, at: .horizontal)
-        .border(width: 1, color: .border, style: .solid)
-    }
-}
-
-struct AboutPrinciple: Component {
-    let title: String
-    let description: String
-
-    var body: some Node {
-        Stack {
-            Heading(.three) { title }
-                .font(.serif, size: 18, color: .text)
-
-            Paragraph { description }
-                .font(.mono, size: 13, lineHeight: 1.6, color: .muted)
-        }
-        .flex(.column, gap: 12)
-        .padding(28)
-        .border(width: 1, color: .border, style: .solid)
     }
 }

@@ -1,6 +1,8 @@
 import Score
+import ScoreLucide
 
-struct ThemeToggle: Component {
+@Component
+struct ThemeToggle {
     static var scopeKey: String? { "theme" }
 
     @State(persisted: .theme) var isDark = false

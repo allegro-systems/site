@@ -1,6 +1,7 @@
 import Score
 
-struct SectionLabel: Component {
+@Component
+struct SectionLabel {
     let title: String
 
     var body: some Node {

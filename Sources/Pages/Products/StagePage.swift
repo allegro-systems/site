@@ -9,7 +9,13 @@ struct StagePage: Page {
             accentColor: .stage,
             heading: "The Hosting and\nOperations Layer",
             subtitle: "The hosting and operations layer",
-            description: "The hosting and operations layer for the Allegro ecosystem \u{2014} deploy, scale, and observe Score applications with zero configuration. Swift workloads as a first-class deployment target, from static output to full runtime binaries. Coming soon.",
+            description: """
+                The hosting and operations layer for the Allegro ecosystem \
+                \u{2014} deploy, scale, and observe Score applications with \
+                zero configuration. Swift workloads as a first-class \
+                deployment target, from static output to full runtime \
+                binaries. Coming soon.
+                """,
             highlights: "Host Static Output  \u{00B7}  Host Runtime Binaries  \u{00B7}  Swift Workloads as First-Class Target",
             gradient: .radial(color: .stage, opacity: 0.04, width: 120, height: 80, at: .top),
             features: [

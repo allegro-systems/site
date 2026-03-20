@@ -1,23 +1,29 @@
 [tools]
 swift = "6.2"
 
+[env]
+SCORE_EDITOR = "zed"
+
 # Dev Server
 [tasks.dev]
 description = "Start the development server with hot reload"
-sources = ["Sources/**/*.swift", "Package.swift"]
+raw = true
 usage = '''
-flag "-p --port" help="Port for the dev server" default="8080"
+flag "-p --port <port>" help="Port for the dev server" default="8080"
 '''
 run = '''
-swift run score dev --port "${usage_port?}"
+swift run score dev --port "$usage_port"
 '''
 
 # Build
 [tasks.build]
 description = "Build the site for production"
 sources = ["Sources/**/*.swift", "Package.swift"]
+usage = '''
+flag "-v --verbose" help="Show verbose build output" default="false"
+'''
 run = '''
-swift run score build
+swift run ${usage_verbose:+-v} score build
 '''
 
 # Format & Lint
@@ -25,7 +31,7 @@ swift run score build
 description = "Format or lint source code"
 sources = ["Sources/**/*.swift"]
 usage = '''
-flag "--check" help="Lint instead of format"
+flag "--check" help="Lint instead of format" default="false"
 '''
 run = '''
 if [ "${usage_check?}" = "true" ]; then

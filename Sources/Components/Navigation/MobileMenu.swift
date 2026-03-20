@@ -1,6 +1,8 @@
 import Score
+import ScoreLucide
 
-struct MobileMenu: Component {
+@Component
+struct MobileMenu {
     @State var isOpen = false
 
     @Action
@@ -18,13 +20,13 @@ struct MobileMenu: Component {
 
             Stack {
                 Navigation {
-                    Link(to: "/products") { "Products" }
+                    Link(to: "/products") { Localized("nav.products") }
                         .font(.mono, size: 15, color: .text, decoration: TextDecoration.none)
-                    Link(to: "/docs") { "Documentation" }
+                    Link(to: "/docs") { Localized("nav.documentation") }
                         .font(.mono, size: 15, color: .text, decoration: TextDecoration.none)
-                    Link(to: "/about") { "About" }
+                    Link(to: "/about") { Localized("nav.about") }
                         .font(.mono, size: 15, color: .text, decoration: TextDecoration.none)
-                    Link(to: "/blog") { "Blog" }
+                    Link(to: "/blog") { Localized("nav.blog") }
                         .font(.mono, size: 15, color: .text, decoration: TextDecoration.none)
                 }
                 .flex(.column, gap: 16)

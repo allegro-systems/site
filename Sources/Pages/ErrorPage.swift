@@ -6,20 +6,20 @@ struct NotFoundPage: ErrorPage {
     var body: some Node {
         Layout {
             Section {
-                Text { "404" }
+                Text { Localized("error.404") }
                     .font(.serif, size: 120, weight: .light, color: .dimmer)
                     .compact { $0.font(size: 96) }
 
-                Heading(.one) { "Page not found" }
+                Heading(.one) { Localized("error.title") }
                     .font(.serif, size: 36, weight: .light, color: .text)
                     .compact { $0.font(size: 30) }
 
-                Paragraph { "The page you\u{2019}re looking for doesn\u{2019}t exist\nor has been moved." }
+                Paragraph { Localized("error.message") }
                     .font(.mono, size: 14, lineHeight: 1.6, color: .muted, align: .center)
                     .size(maxWidth: 400)
                     .compact { $0.font(size: 13) }
 
-                SiteButton(title: "\u{2190} Back to Home", link: "/", variant: .secondary)
+                SiteButton(title: t("ui.back_to_home"), link: "/", variant: .secondary)
             }
             .flex(.column, gap: 24, align: .center, justify: .center)
             .size(minHeight: 600)

@@ -5,7 +5,8 @@ import Score
 /// Renders a hero section with product badge, heading, subtitle, and
 /// description, followed by an email capture section and a grid of
 /// ``ComingSoonCard`` items describing what to expect.
-struct ComingSoonProductLayout: Component {
+@Component
+struct ComingSoonProductLayout {
     let name: String
     let accentColor: ColorToken
     let heading: String
@@ -13,7 +14,7 @@ struct ComingSoonProductLayout: Component {
     let description: String
     let highlights: String
     let gradient: RadialGradient
-    let descriptionMaxWidth: Length
+    var descriptionMaxWidth: Length = 580
     let features: [Feature]
 
     struct Feature: Sendable {
@@ -22,37 +23,11 @@ struct ComingSoonProductLayout: Component {
         let description: String
     }
 
-    init(
-        name: String,
-        accentColor: ColorToken,
-        heading: String,
-        subtitle: String,
-        description: String,
-        highlights: String,
-        gradient: RadialGradient,
-        descriptionMaxWidth: Length = 580,
-        features: [Feature]
-    ) {
-        self.name = name
-        self.accentColor = accentColor
-        self.heading = heading
-        self.subtitle = subtitle
-        self.description = description
-        self.highlights = highlights
-        self.gradient = gradient
-        self.descriptionMaxWidth = descriptionMaxWidth
-        self.features = features
-    }
-
     var body: some Node {
         Layout {
             Section {
                 Stack {
-                    Text { name }
-                        .font(.mono, size: 11, weight: .medium, tracking: 1, color: accentColor)
-                        .padding(5, at: .vertical)
-                        .padding(14, at: .horizontal)
-                        .border(width: 1, color: accentColor, style: .solid)
+                    ProductPill(title: name, color: accentColor)
                 }
                 .flex(.row, justify: .center)
 
@@ -95,7 +70,7 @@ struct ComingSoonProductLayout: Component {
 
                 Stack {
                     for feature in features {
-                        ComingSoonCard(
+                        FeatureCard(
                             icon: feature.icon,
                             title: feature.title,
                             description: feature.description,

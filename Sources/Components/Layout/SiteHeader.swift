@@ -1,6 +1,8 @@
 import Score
+import ScoreLucide
 
-struct SiteHeader: Component {
+@Component
+struct SiteHeader {
 
     var body: some Node {
         Header {
@@ -11,9 +13,9 @@ struct SiteHeader: Component {
                 ProductsDropdown()
                 DocsDropdown()
 
-                Link(to: "/about") { "About" }
+                Link(to: "/about") { Localized("nav.about") }
                     .font(.mono, size: 13, color: .text, decoration: TextDecoration.none)
-                Link(to: "/blog") { "Blog" }
+                Link(to: "/blog") { Localized("nav.blog") }
                     .font(.mono, size: 13, color: .text, decoration: TextDecoration.none)
             }
             .flex(.row, gap: 24, align: .center, justify: .center)

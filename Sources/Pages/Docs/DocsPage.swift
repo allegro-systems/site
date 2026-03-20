@@ -38,6 +38,7 @@ struct DocsPage: Page {
                         title: "Stage",
                         description: "Hosting, deployment, and observability.",
                         accentColor: .stage,
+                        link: "/docs/stage",
                         comingSoon: true,
                         filled: true
                     )
@@ -45,6 +46,7 @@ struct DocsPage: Page {
                         title: "Composer",
                         description: "Native visual editor and GUI workflows.",
                         accentColor: .composer,
+                        link: "/docs/composer",
                         comingSoon: true,
                         filled: true
                     )

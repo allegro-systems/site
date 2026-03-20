@@ -1,6 +1,7 @@
 import Score
 
-struct EmailCapture: Component {
+@Component
+struct EmailCapture {
 
     var body: some Node {
         Form(action: "#", method: .post) {

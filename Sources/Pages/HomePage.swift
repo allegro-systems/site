@@ -6,22 +6,25 @@ struct HomePage: Page {
     var body: some Node {
         Layout {
             Section {
-                Heading(.one) { "Taking your ideas\nfrom score to stage" }
+                Heading(.one) { Localized("home.hero.title") }
                     .font(.serif, size: 56, weight: .light, lineHeight: 1.15, color: .text, align: .center, wrap: .balance)
                     .size(maxWidth: 740)
                     .compact { $0.font(size: 36) }
+                    .animate(.fadeIn, duration: 0.6)
 
-                Paragraph { "A Swift-first ecosystem of tools for building, hosting, and publishing on the modern web." }
+                Paragraph { Localized("home.hero.subtitle") }
                     .font(.mono, size: 15, lineHeight: 1.6, color: .muted, align: .center)
                     .size(maxWidth: 580)
                     .compact { $0.font(size: 13) }
+                    .animate(.fadeIn, duration: 0.6, delay: 0.15)
 
                 Stack {
-                    SiteButton(title: "Get Started", link: "/docs", variant: .primary(.accent))
-                    SiteButton(title: "View on GitHub", link: "https://github.com/allegro-systems", variant: .secondary, opensInNewTab: true)
+                    SiteButton(title: t("ui.get_started"), link: "/docs", variant: .primary(.accent))
+                    SiteButton(title: t("ui.view_on_github"), link: "https://github.com/allegro-systems", variant: .secondary, opensInNewTab: true)
                 }
                 .flex(.row, gap: 16, align: .center)
                 .compact { $0.flex(.column, gap: 12).size(width: .percent(100)) }
+                .animate(.fadeIn, duration: 0.6, delay: 0.3)
             }
             .flex(.column, gap: 28, align: .center)
             .padding(120, at: .vertical)
@@ -32,37 +35,16 @@ struct HomePage: Page {
             Divider()
 
             Section {
-                SectionLabel(title: "Products")
+                SectionLabel(title: t("home.products"))
+                    .animateOnScroll(.fadeIn)
 
                 Stack {
-                    ProductCard(
-                        title: "Score",
-                        description: "The Swift web framework. Write components, compile to HTML, CSS and JS.",
-                        accentColor: .score,
-                        link: "/score"
-                    )
-                    ProductCard(
-                        title: "Stage",
-                        description: "The hosting and operations layer. Deploy, scale and observe Score applications.",
-                        accentColor: .stage,
-                        comingSoon: true
-                    )
-                    ProductCard(
-                        title: "Composer",
-                        description: "The native macOS and iPad visual editor. Build Score UIs without touching the compiler.",
-                        accentColor: .composer,
-                        comingSoon: true
-                    )
-                    ProductCard(
-                        title: "Libretto",
-                        description: "The first-party reference application. A proof-of-concept built entirely on Score and Stage.",
-                        accentColor: .libretto,
-                        comingSoon: true
-                    )
+                    ProductCardGrid()
                 }
                 .grid(columns: 2, gap: 20)
                 .desktop { $0.grid(columns: 4, gap: 20) }
                 .compact { $0.grid(columns: 1, gap: 16) }
+                .animateOnScroll(.slideUp, duration: 0.5)
             }
             .flex(.column, gap: 40)
             .padding(80, at: .vertical)
@@ -72,28 +54,30 @@ struct HomePage: Page {
             Divider()
 
             Section {
-                SectionLabel(title: "Why Allegro")
+                SectionLabel(title: t("home.why_allegro"))
+                    .animateOnScroll(.fadeIn)
 
                 Stack {
                     FeatureCard(
                         icon: "zap",
-                        title: "Swift-First",
-                        description: "Built from the ground up in Swift. No wrappers, no compromises \u{2014} just native performance and type safety."
+                        title: t("home.feature.swift_first"),
+                        description: t("home.feature.swift_first.desc")
                     )
                     FeatureCard(
                         icon: "layers",
-                        title: "Integrated by Design",
-                        description: "Score, Stage, Composer, and Libretto work together as one cohesive system \u{2014} no glue code required."
+                        title: t("home.feature.integrated"),
+                        description: t("home.feature.integrated.desc")
                     )
                     FeatureCard(
                         icon: "book-open",
-                        title: "Open and Transparent",
-                        description: "Open-source core with a commitment to developer freedom. Inspect, extend, and contribute."
+                        title: t("home.feature.open"),
+                        description: t("home.feature.open.desc")
                     )
                 }
                 .grid(columns: 3, gap: 20)
                 .tablet { $0.grid(columns: 2, gap: 20) }
                 .compact { $0.grid(columns: 1, gap: 16) }
+                .animateOnScroll(.slideUp, duration: 0.5)
             }
             .flex(.column, gap: 40)
             .padding(80, at: .vertical)
@@ -101,24 +85,25 @@ struct HomePage: Page {
             .compact { $0.padding(60, at: .vertical).padding(20, at: .horizontal) }
 
             Section {
-                SectionLabel(title: "Documentation")
+                SectionLabel(title: t("home.docs"))
+                    .animateOnScroll(.fadeIn)
 
                 Stack {
                     DocCard(
-                        title: "Score Docs",
-                        description: "Guides, API reference and tutorials for the Score framework.",
+                        title: t("home.docs.score"),
+                        description: t("home.docs.score.desc"),
                         accentColor: .score,
                         link: "/docs/score"
                     )
                     DocCard(
-                        title: "Stage Docs",
-                        description: "Deployment guides, scaling configuration and observability setup.",
+                        title: t("home.docs.stage"),
+                        description: t("home.docs.stage.desc"),
                         accentColor: .stage,
                         comingSoon: true
                     )
                     DocCard(
-                        title: "Composer Docs",
-                        description: "Visual editor workflows, component library and export options.",
+                        title: t("home.docs.composer"),
+                        description: t("home.docs.composer.desc"),
                         accentColor: .composer,
                         comingSoon: true
                     )
@@ -126,6 +111,7 @@ struct HomePage: Page {
                 .grid(columns: 3, gap: 20)
                 .tablet { $0.grid(columns: 2, gap: 20) }
                 .compact { $0.grid(columns: 1, gap: 16) }
+                .animateOnScroll(.slideUp, duration: 0.5)
             }
             .flex(.column, gap: 40)
             .padding(80, at: .vertical)
