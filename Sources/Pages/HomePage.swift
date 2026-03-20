@@ -19,12 +19,16 @@ struct HomePage: Page {
                     .animate(.fadeIn, duration: 0.6, delay: 0.15)
 
                 Stack {
-                    SiteButton(title: t("ui.get_started"), link: "/docs", variant: .primary(.accent))
+                    SiteButton(title: t("ui.get_started"), link: "http://dashboard.allegro.localhost", variant: .primary(.accent))
+                        .htmlAttribute("id", "cta-dashboard")
+                    SiteButton(title: t("ui.read_docs"), link: "/docs", variant: .secondary)
                     SiteButton(title: t("ui.view_on_github"), link: "https://github.com/allegro-systems", variant: .secondary, opensInNewTab: true)
                 }
                 .flex(.row, gap: 16, align: .center)
                 .compact { $0.flex(.column, gap: 12).size(width: .percent(100)) }
                 .animate(.fadeIn, duration: 0.6, delay: 0.3)
+
+                RawTextNode(dashboardCtaScript)
             }
             .flex(.column, gap: 28, align: .center)
             .padding(120, at: .vertical)
@@ -120,3 +124,16 @@ struct HomePage: Page {
         }
     }
 }
+
+private let dashboardCtaScript = """
+<script>
+(function() {
+  var btn = document.getElementById('cta-dashboard');
+  if (!btn) return;
+  var link = btn.querySelector('a') || btn;
+  if (document.cookie.indexOf('session=') !== -1) {
+    link.textContent = 'Dashboard';
+  }
+})();
+</script>
+"""
