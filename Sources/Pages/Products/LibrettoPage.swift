@@ -121,10 +121,10 @@ struct LibrettoPage: Page {
                     .flex(.column, gap: 12)
 
                     Stack {
-                        Heading(.three) { "KVStore Persistence" }
+                        Heading(.three) { "ScoreData Persistence" }
                             .font(.serif, size: 20, weight: .light, color: .text)
 
-                        Paragraph { "All data lives in SQLite via ScoreData\u{2019}s KVStore. Hierarchical keys, secondary indexes, and typed wrappers keep queries simple and fast." }
+                        Paragraph { "All data is stored through ScoreData \u{2014} a pluggable persistence layer with SQLite as the default backend. The KVStore API uses hierarchical keys and typed wrappers, but the backend is swappable." }
                             .font(.mono, size: 13, lineHeight: 1.6, color: .muted)
                     }
                     .flex(.column, gap: 12)
