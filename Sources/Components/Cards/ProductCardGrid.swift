@@ -13,7 +13,7 @@ struct ProductCardGrid {
             title: "Stage",
             description: t("products.stage.card_desc"),
             accentColor: .stage,
-            comingSoon: true
+            link: "/stage"
         )
         ProductCard(
             title: "Composer",
@@ -25,7 +25,7 @@ struct ProductCardGrid {
             title: "Libretto",
             description: t("products.libretto.card_desc"),
             accentColor: .libretto,
-            comingSoon: true
+            link: "/libretto"
         )
     }
 }
