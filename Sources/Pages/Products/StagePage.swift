@@ -26,14 +26,15 @@ struct StagePage: Page {
                     .size(maxWidth: 520)
 
                 Stack {
-                    SiteButton(title: "Open Dashboard \u{2192}", link: "http://dashboard.allegro.localhost", variant: .primary(.stage))
+                    SiteButton(title: "Get Started \u{2192}", link: "http://dashboard.allegro.localhost/login", variant: .primary(.stage))
                     SiteButton(title: "View on GitHub \u{2192}", link: "https://github.com/allegro-systems", variant: .secondary, opensInNewTab: true)
                 }
                 .flex(.row, gap: 16, align: .center)
                 .compact { $0.flex(.column, gap: 12).size(width: .percent(100)) }
             }
-            .flex(.column, gap: 24, align: .center)
-            .padding(100, at: .vertical)
+            .flex(.column, gap: 24, align: .center, justify: .center)
+            .size(height: 600)
+            .padding(80, at: .vertical)
             .padding(56, at: .horizontal)
             .backgroundGradient(.radial(color: .stage, opacity: 0.04, width: 120, height: 80, at: .top))
             .compact { $0.padding(80, at: .vertical).padding(20, at: .horizontal) }

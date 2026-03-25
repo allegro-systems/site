@@ -36,8 +36,9 @@ struct ScorePage: Page {
                     DevToolsToggle()
                 }
             }
-            .flex(.column, gap: 24, align: .center)
-            .padding(100, at: .vertical)
+            .flex(.column, gap: 24, align: .center, justify: .center)
+            .size(height: 600)
+            .padding(80, at: .vertical)
             .padding(56, at: .horizontal)
             .backgroundGradient(.radial(color: .score, opacity: 0.04, width: 120, height: 80, at: .top))
             .compact { $0.padding(80, at: .vertical).padding(20, at: .horizontal) }
