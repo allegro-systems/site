@@ -19,6 +19,7 @@ struct SiteButton {
                 .font(.mono, size: 13, weight: .medium, color: .bg, align: .center, decoration: TextDecoration.none)
                 .padding(14, at: .vertical)
                 .padding(28, at: .horizontal)
+                .size(minWidth: 180)
                 .background(background)
                 .hover { $0.opacity(0.85) }
 
@@ -27,6 +28,7 @@ struct SiteButton {
                 .font(.mono, size: 13, weight: .medium, color: .text, align: .center, decoration: TextDecoration.none)
                 .padding(14, at: .vertical)
                 .padding(28, at: .horizontal)
+                .size(minWidth: 180)
                 .border(width: 1, color: .border, style: .solid)
                 .hover { $0.background(.elevated) }
         }

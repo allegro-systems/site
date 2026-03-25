@@ -9,16 +9,18 @@ struct SiteHeader {
             SiteLogo()
                 .flexItem(grow: 1)
 
-            Navigation {
-                ProductsDropdown()
-                DocsDropdown()
+            Stack {
+                Navigation {
+                    ProductsDropdown()
+                    DocsDropdown()
 
-                Link(to: "/about") { Localized("nav.about") }
-                    .font(.mono, size: 13, color: .text, decoration: TextDecoration.none)
-                Link(to: "/blog") { Localized("nav.blog") }
-                    .font(.mono, size: 13, color: .text, decoration: TextDecoration.none)
+                    Link(to: "/about") { Localized("nav.about") }
+                        .font(.mono, size: 13, color: .text, decoration: TextDecoration.none)
+                    Link(to: "http://libretto.allegro.localhost/blog") { Localized("nav.blog") }
+                        .font(.mono, size: 13, color: .text, decoration: TextDecoration.none)
+                }
+                .flex(.row, gap: 24, align: .center, justify: .center)
             }
-            .flex(.row, gap: 24, align: .center, justify: .center)
             .flexItem(grow: 1)
             .compact { $0.hidden() }
 

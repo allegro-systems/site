@@ -19,14 +19,14 @@ struct MobileMenu {
             .cursor(.pointer)
 
             Stack {
-                Navigation {
+                Stack {
                     Link(to: "/products") { Localized("nav.products") }
                         .font(.mono, size: 15, color: .text, decoration: TextDecoration.none)
                     Link(to: "/docs") { Localized("nav.documentation") }
                         .font(.mono, size: 15, color: .text, decoration: TextDecoration.none)
                     Link(to: "/about") { Localized("nav.about") }
                         .font(.mono, size: 15, color: .text, decoration: TextDecoration.none)
-                    Link(to: "/blog") { Localized("nav.blog") }
+                    Link(to: "http://libretto.allegro.localhost/blog") { Localized("nav.blog") }
                         .font(.mono, size: 15, color: .text, decoration: TextDecoration.none)
                 }
                 .flex(.column, gap: 16)

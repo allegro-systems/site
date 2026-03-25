@@ -24,7 +24,7 @@ struct SiteFooter {
                         .font(.mono, size: 13, color: .muted, decoration: TextDecoration.none)
                     Link(to: "/about") { Localized("nav.about") }
                         .font(.mono, size: 13, color: .muted, decoration: TextDecoration.none)
-                    Link(to: "/blog") { Localized("nav.blog") }
+                    Link(to: "http://libretto.allegro.localhost/blog") { Localized("nav.blog") }
                         .font(.mono, size: 13, color: .muted, decoration: TextDecoration.none)
                 }
                 .flex(.row, gap: 24, align: .start, justify: .center)
