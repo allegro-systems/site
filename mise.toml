@@ -1,5 +1,6 @@
 [tools]
 swift = "6.2"
+hk = { version = "latest", postinstall = "hk install" }
 
 [env]
 SCORE_EDITOR = "zed"
@@ -39,32 +40,6 @@ if [ "${usage_check?}" = "true" ]; then
 else
   swift format --recursive -i Sources
 fi
-'''
-
-# Continuous Integration
-[tasks.ci]
-description = "Run all CI gates"
-depends = [
-  "format",
-  "format --check",
-  "build",
-]
-run = "echo CI completed successfully"
-
-# Hooks
-[tasks.setup-hooks]
-description = "Install pre-commit hook"
-run = '''
-HOOK_PATH="$(git rev-parse --git-path hooks/pre-commit)"
-printf "%s\n" \
-  "#!/usr/bin/env sh" \
-  "set -eu" \
-  "ROOT=$(git rev-parse --show-toplevel)" \
-  "cd \"$ROOT\"" \
-  "echo \"[pre-commit] Running mise run ci...\"" \
-  "mise run ci" > "$HOOK_PATH"
-chmod +x "$HOOK_PATH"
-echo "Installed pre-commit hook at $HOOK_PATH"
 '''
 
 # Clean

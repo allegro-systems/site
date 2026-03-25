@@ -7,6 +7,7 @@ let package = Package(
     dependencies: [
         .package(path: "../score"),
         .package(path: "../score-plugins/score-lucide"),
+        .package(path: "../score-plugins/score-oauth"),
         .package(path: "../score-plugins/allegro-theme"),
     ],
     targets: [
@@ -15,6 +16,7 @@ let package = Package(
             dependencies: [
                 .product(name: "Score", package: "Score"),
                 .product(name: "ScoreLucide", package: "score-lucide"),
+                .product(name: "ScoreOAuth", package: "score-oauth"),
                 .product(name: "AllegroTheme", package: "allegro-theme"),
             ],
             path: "Sources"
