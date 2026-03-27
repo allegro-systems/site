@@ -20,6 +20,24 @@
             "state": "translated",
             "value": "Reproducción automática no solicitada"
           }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Навязчивое автовоспроизведение"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Autoplay non richiesto"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lecture automatique non sollicitée"
+          }
         }
       }
     },
@@ -41,6 +59,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Navegación profunda"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Глубокая навигация"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Navigazione profonda"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Navigation profonde"
           }
         }
       }
@@ -64,6 +100,24 @@
             "state": "translated",
             "value": "Interrupciones modales"
           }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Модальные прерывания"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Interruzioni modali"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Interruptions modales"
+          }
         }
       }
     },
@@ -85,6 +139,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Movimiento decorativo excesivo"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Чрезмерная декоративная анимация"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Movimento decorativo eccessivo"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mouvement décoratif excessif"
           }
         }
       }
@@ -108,6 +180,24 @@
             "state": "translated",
             "value": "Indicadores de carga"
           }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Индикаторы загрузки"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Indicatori di caricamento"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Indicateurs de chargement"
+          }
         }
       }
     },
@@ -129,6 +219,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Patrones que rechazamos conscientemente. No porque siempre estén mal,\nsino porque entran en conflicto con la experiencia que estamos construyendo."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Паттерны, которые мы сознательно отвергаем. Не потому, что они всегда неправильны,\nа потому, что они противоречат опыту, который мы создаём."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pattern che rifiutiamo consapevolmente. Non perché siano sempre sbagliati,\nma perché sono in conflitto con l'esperienza che stiamo costruendo."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Des patterns que nous rejetons consciemment. Non pas parce qu'ils sont toujours mauvais,\nmais parce qu'ils entrent en conflit avec l'expérience que nous construisons."
           }
         }
       }
@@ -152,6 +260,24 @@
             "state": "translated",
             "value": "Lo Que Evitamos"
           }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Чего мы избегаем"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cosa Evitiamo"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ce Que Nous Évitons"
+          }
         }
       }
     },
@@ -173,6 +299,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Dependencia de tooltips"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Зависимость от всплывающих подсказок"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dipendenza dai tooltip"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dépendance aux infobulles"
           }
         }
       }
@@ -196,6 +340,24 @@
             "state": "translated",
             "value": "Construimos herramientas para la web a largo plazo — software que respeta el oficio del desarrollo y la paciencia del buen diseño."
           }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Мы создаём инструменты для долгосрочного веба — программное обеспечение, которое уважает мастерство разработки и терпение хорошего дизайна."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Costruiamo strumenti per il web a lungo termine — software che rispetta l'arte dello sviluppo e la pazienza del buon design."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nous construisons des outils pour le web durable — des logiciels qui respectent l'art du développement et la patience du bon design."
+          }
         }
       }
     },
@@ -217,6 +379,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Nuestra Filosofía"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Наша философия"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La Nostra Filosofia"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Notre Philosophie"
           }
         }
       }
@@ -240,6 +420,24 @@
             "state": "translated",
             "value": "Composición sobre herencia"
           }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Композиция вместо наследования"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Composizione invece di ereditarietà"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Composition plutôt qu'héritage"
+          }
         }
       }
     },
@@ -261,6 +459,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Construye comportamiento complejo a partir de partes pequeñas y predecibles en lugar de jerarquías profundas de clases."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Создавайте сложное поведение из маленьких, предсказуемых частей, а не из глубоких иерархий классов."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Costruisci comportamenti complessi da parti piccole e prevedibili invece di gerarchie di classi profonde."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Construisez des comportements complexes à partir de petites parties prévisibles plutôt que de hiérarchies de classes profondes."
           }
         }
       }
@@ -284,6 +500,24 @@
             "state": "translated",
             "value": "Convención sobre configuración"
           }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Соглашения вместо конфигурации"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Convenzione invece di configurazione"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Convention plutôt que configuration"
+          }
         }
       }
     },
@@ -305,6 +539,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Valores predeterminados sensatos que cubren el 90% de los casos. Vías de escape para el resto."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Разумные значения по умолчанию, покрывающие 90% случаев. Запасные выходы для остального."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Valori predefiniti sensati che coprono il 90% dei casi. Vie d'uscita per il resto."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Des valeurs par défaut sensées qui couvrent 90% des cas. Des échappatoires pour le reste."
           }
         }
       }
@@ -328,6 +580,24 @@
             "state": "translated",
             "value": "Durabilidad sobre novedad"
           }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Надёжность вместо новизны"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Durabilità invece di novità"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Durabilité plutôt que nouveauté"
+          }
         }
       }
     },
@@ -349,6 +619,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Elige tecnología aburrida que funcione de forma fiable sobre herramientas brillantes que pueden no durar."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Выбирайте скучные технологии, которые работают надёжно, вместо блестящих инструментов, которые могут не прижиться."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scegli tecnologie consolidate che funzionano in modo affidabile rispetto a strumenti brillanti che potrebbero non durare."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choisissez des technologies éprouvées qui fonctionnent de manière fiable plutôt que des outils brillants qui pourraient ne pas durer."
           }
         }
       }
@@ -372,6 +660,24 @@
             "state": "translated",
             "value": "Integración vertical sobre pegamento"
           }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Вертикальная интеграция вместо склейки"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Integrazione verticale invece di codice collante"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Intégration verticale plutôt que code de liaison"
+          }
         }
       }
     },
@@ -393,6 +699,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Controla todo el stack desde el código fuente hasta el despliegue. Menos uniones, menos errores."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Владейте полным стеком от исходного кода до развёртывания. Меньше стыков — меньше ошибок."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Possiedi l'intero stack dal sorgente al deployment. Meno giunture, meno bug."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Maîtrisez toute la pile du code source au déploiement. Moins de jointures, moins de bugs."
           }
         }
       }
@@ -416,6 +740,24 @@
             "state": "translated",
             "value": "Análisis estático sobre verificaciones en ejecución"
           }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Статический анализ вместо проверок во время выполнения"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Analisi statica invece di controlli a runtime"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Analyse statique plutôt que vérifications à l'exécution"
+          }
         }
       }
     },
@@ -437,6 +779,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Detecta errores en tiempo de compilación. La seguridad de tipos es la primera línea de defensa."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ловите ошибки на этапе компиляции. Безопасность типов — первая линия обороны."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cattura gli errori a tempo di compilazione. La sicurezza dei tipi è la prima linea di difesa."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Détectez les erreurs à la compilation. La sûreté des types est la première ligne de défense."
           }
         }
       }
@@ -460,6 +820,24 @@
             "state": "translated",
             "value": "Transparencia sobre magia"
           }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Прозрачность вместо магии"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trasparenza invece di magia"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Transparence plutôt que magie"
+          }
         }
       }
     },
@@ -481,6 +859,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Toda abstracción debe ser inspeccionable. Sin comportamiento oculto en tiempo de ejecución."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Каждая абстракция должна быть инспектируемой. Никакого скрытого поведения во время выполнения."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ogni astrazione dovrebbe essere ispezionabile. Nessun comportamento nascosto a runtime."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chaque abstraction doit être inspectable. Aucun comportement caché à l'exécution."
           }
         }
       }
@@ -504,6 +900,24 @@
             "state": "translated",
             "value": "La documentación es producto"
           }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Документация — это продукт"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La documentazione è un prodotto"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La documentation est un produit"
+          }
         }
       }
     },
@@ -525,6 +939,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "La documentación no es un pensamiento posterior. Se envía con la funcionalidad."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Документация — не запоздалая мысль. Она поставляется вместе с функцией."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La documentazione non è un ripensamento. Viene rilasciata con la funzionalità."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La documentation n'est pas une réflexion après coup. Elle est livrée avec la fonctionnalité."
           }
         }
       }
@@ -548,6 +980,24 @@
             "state": "translated",
             "value": "Retroalimentación inmediata"
           }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Мгновенная обратная связь"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Feedback immediato"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Retour immédiat"
+          }
         }
       }
     },
@@ -569,6 +1019,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Cada acción debe producir un resultado visible en milisegundos."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Каждое действие должно давать видимый результат в течение миллисекунд."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ogni azione dovrebbe produrre un risultato visibile entro millisecondi."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chaque action doit produire un résultat visible en quelques millisecondes."
           }
         }
       }
@@ -592,6 +1060,24 @@
             "state": "translated",
             "value": "Piso bajo, techo alto"
           }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Низкий порог, высокий потолок"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Soglia bassa, soffitto alto"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Seuil bas, plafond haut"
+          }
         }
       }
     },
@@ -613,6 +1099,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Fácil de empezar, lo suficientemente potente para producción. Sin ruedas de entrenamiento que estorben."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Легко начать, достаточно мощный для продакшена. Никаких ограничителей, которые мешают."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Facile da iniziare, abbastanza potente per la produzione. Nessun limitatore che intralci."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Facile à démarrer, assez puissant pour la production. Pas de garde-fous qui gênent."
           }
         }
       }
@@ -636,6 +1140,24 @@
             "state": "translated",
             "value": "Sin configuración por defecto"
           }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Без конфигурации по умолчанию"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zero configurazione di default"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zéro configuration par défaut"
+          }
         }
       }
     },
@@ -657,6 +1179,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Envía con valores predeterminados sensatos. La configuración es para sobreescrituras, no para inicialización."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Поставляйте с разумными значениями по умолчанию. Конфигурация — для переопределений, не для настройки."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Distribuisci con valori predefiniti sensati. La configurazione è per le personalizzazioni, non per il setup."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Livrez avec des valeurs par défaut sensées. La configuration sert aux personnalisations, pas à l'installation."
           }
         }
       }
@@ -680,6 +1220,24 @@
             "state": "translated",
             "value": "Cómo pensamos sobre la capa de experiencia — la interfaz entre herramienta y humano."
           }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Как мы думаем о слое опыта — интерфейсе между инструментом и человеком."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Come pensiamo al livello dell'esperienza — l'interfaccia tra strumento e persona."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Comment nous pensons la couche d'expérience — l'interface entre l'outil et l'humain."
+          }
         }
       }
     },
@@ -701,6 +1259,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Estándares de Producto"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Стандарты продукта"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Standard di Prodotto"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Standards Produit"
           }
         }
       }
@@ -724,6 +1300,24 @@
             "state": "translated",
             "value": "Seis principios que guían cada decisión arquitectónica que tomamos."
           }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Шесть принципов, которые направляют каждое наше архитектурное решение."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sei principi che guidano ogni nostra decisione architetturale."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Six principes qui guident chacune de nos décisions architecturales."
+          }
         }
       }
     },
@@ -745,6 +1339,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Tesis de Sistemas"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Системный тезис"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tesi di Sistema"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Thèse Système"
           }
         }
       }
@@ -768,6 +1380,24 @@
             "state": "translated",
             "value": "Notas arquitectónicas, decisiones de diseño y actualizaciones de construcción."
           }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Архитектурные заметки, дизайн-решения и обновления сборки."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Note architetturali, decisioni di design e aggiornamenti sullo sviluppo."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Notes architecturales, décisions de design et mises à jour de développement."
+          }
         }
       }
     },
@@ -786,6 +1416,24 @@
           }
         },
         "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Blog"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Блог"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Blog"
+          }
+        },
+        "fr": {
           "stringUnit": {
             "state": "translated",
             "value": "Blog"
@@ -812,6 +1460,24 @@
             "state": "translated",
             "value": "Incorporación Visual  ·  Modelo de Trabajador Único  ·  Compilaciones Determinísticas via Stage"
           }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Визуальный онбординг  ·  Модель одного воркера  ·  Детерминированные сборки через Stage"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Onboarding visuale  ·  Modello a singolo worker  ·  Build deterministiche via Stage"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Onboarding visuel  ·  Modèle à worker unique  ·  Builds déterministes via Stage"
+          }
         }
       }
     },
@@ -833,6 +1499,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Un editor visual nativo para macOS e iPad que te permite diseñar y construir proyectos Score sin escribir código. Componentes de arrastrar y soltar, vista previa en vivo y compilaciones de producción determinísticas impulsadas por Stage. Próximamente."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Нативный визуальный редактор для macOS и iPad, который позволяет проектировать и создавать проекты Score без написания кода. Перетаскивание компонентов, живой предпросмотр и детерминированные продакшен-сборки на базе Stage. Скоро."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un editor visuale nativo per macOS e iPad che ti permette di progettare e costruire progetti Score senza scrivere codice. Componenti drag-and-drop, anteprima live e build di produzione deterministiche con Stage. In arrivo."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un éditeur visuel natif pour macOS et iPad qui vous permet de concevoir et construire des projets Score sans écrire de code. Glisser-déposer des composants, aperçu en direct et builds de production déterministes via Stage. Bientôt disponible."
           }
         }
       }
@@ -856,6 +1540,24 @@
             "state": "translated",
             "value": "Editor de Lienzo Visual"
           }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Визуальный редактор холста"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Editor Canvas Visuale"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Éditeur Canvas Visuel"
+          }
         }
       }
     },
@@ -877,6 +1579,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Diseña maquetaciones con un editor nativo de arrastrar y soltar para macOS e iPad. Construye visualmente, exporta limpiamente."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Проектируйте макеты с помощью нативного редактора macOS и iPad с перетаскиванием. Создавайте визуально, экспортируйте чисто."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Progetta layout con un editor drag-and-drop nativo per macOS e iPad. Costruisci visivamente, esporta in modo pulito."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Concevez des mises en page avec un éditeur glisser-déposer natif macOS et iPad. Construisez visuellement, exportez proprement."
           }
         }
       }
@@ -900,6 +1620,24 @@
             "state": "translated",
             "value": "Biblioteca de Componentes"
           }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Библиотека компонентов"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Libreria Componenti"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bibliothèque de Composants"
+          }
         }
       }
     },
@@ -921,6 +1659,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Bloques de construcción reutilizables que se sincronizan con tu proyecto Score. Compone una vez, usa en todas partes."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Переиспользуемые строительные блоки, синхронизированные с вашим проектом Score. Создайте один раз — используйте везде."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Blocchi riutilizzabili sincronizzati con il tuo progetto Score. Componi una volta, usa ovunque."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Des blocs réutilisables synchronisés avec votre projet Score. Composez une fois, utilisez partout."
           }
         }
       }
@@ -944,6 +1700,24 @@
             "state": "translated",
             "value": "Vista Previa en Vivo"
           }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Живой предпросмотр"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anteprima Live"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aperçu en Direct"
+          }
         }
       }
     },
@@ -965,6 +1739,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Ve los cambios renderizados en tiempo real mientras construyes. Lo que ves es lo que se publica en producción."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Смотрите изменения в реальном времени, пока вы создаёте. Что видите — то и отправляется в продакшен."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vedi le modifiche renderizzate in tempo reale mentre costruisci. Quello che vedi è quello che va in produzione."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Voyez les changements rendus en temps réel pendant que vous construisez. Ce que vous voyez est ce qui part en production."
           }
         }
       }
@@ -988,6 +1780,24 @@
             "state": "translated",
             "value": "El Editor Visual\npara macOS e iPad"
           }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Визуальный редактор\nдля macOS и iPad"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L'Editor Visuale\nper macOS e iPad"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L'Éditeur Visuel\npour macOS et iPad"
+          }
         }
       }
     },
@@ -1010,6 +1820,24 @@
             "state": "translated",
             "value": "El editor visual nativo para macOS e iPad"
           }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Нативный визуальный редактор для macOS и iPad"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L'editor visuale nativo per macOS e iPad"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L'éditeur visuel natif pour macOS et iPad"
+          }
         }
       }
     },
@@ -1028,6 +1856,24 @@
           }
         },
         "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Composer"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Composer"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Composer"
+          }
+        },
+        "fr": {
           "stringUnit": {
             "state": "translated",
             "value": "Composer"
@@ -1060,6 +1906,18 @@
             "state": "translated",
             "value": "Увеличить"
           }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Incrementa"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Incrémenter"
+          }
         }
       }
     },
@@ -1088,6 +1946,18 @@
             "state": "translated",
             "value": "Счётчик: "
           }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Conteggio: "
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Compteur : "
+          }
         }
       }
     },
@@ -1109,6 +1979,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "La documentación de Composer se está escribiendo actualmente. Vuelve pronto para guías sobre el editor visual, flujos de lienzo y biblioteca de componentes."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Документация Composer находится в процессе написания. Скоро здесь появятся руководства по визуальному редактору, рабочим процессам холста и библиотеке компонентов."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La documentazione di Composer è in fase di scrittura. Torna presto per guide sull'editor visuale, i flussi di lavoro del canvas e la libreria componenti."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La documentation de Composer est en cours de rédaction. Revenez bientôt pour des guides sur l'éditeur visuel, les workflows du canvas et la bibliothèque de composants."
           }
         }
       }
@@ -1132,6 +2020,24 @@
             "state": "translated",
             "value": "Editor visual nativo y flujos de trabajo GUI."
           }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Нативный визуальный редактор и GUI-процессы."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Editor visuale nativo e workflow GUI."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Éditeur visuel natif et workflows GUI."
+          }
         }
       }
     },
@@ -1153,6 +2059,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Página del producto Composer →"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Страница продукта Composer →"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pagina prodotto Composer →"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Page produit Composer →"
           }
         }
       }
@@ -1176,6 +2100,24 @@
             "state": "translated",
             "value": "Documentación de Composer"
           }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Документация Composer"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Documentazione Composer"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Documentation Composer"
+          }
         }
       }
     },
@@ -1197,6 +2139,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Libretto no tiene documentación independiente — está documentado a través de Score y Stage."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "У Libretto нет отдельной документации — он документирован через Score и Stage."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Libretto non ha documentazione separata — è documentato tramite Score e Stage."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Libretto n'a pas de documentation séparée — il est documenté via Score et Stage."
           }
         }
       }
@@ -1220,6 +2180,24 @@
             "state": "translated",
             "value": "Framework, modelo de ejecución, componentes, CLI y artefactos de compilación."
           }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Фреймворк, модель выполнения, компоненты, CLI и артефакты сборки."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Framework, modello di runtime, componenti, CLI e artefatti di build."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Framework, modèle d'exécution, composants, CLI et artefacts de build."
+          }
         }
       }
     },
@@ -1241,6 +2219,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "La documentación de Stage se está escribiendo actualmente. Vuelve pronto para guías sobre despliegue, alojamiento y observabilidad."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Документация Stage находится в процессе написания. Скоро здесь появятся руководства по развёртыванию, хостингу и наблюдаемости."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La documentazione di Stage è in fase di scrittura. Torna presto per guide su deployment, hosting e osservabilità."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La documentation de Stage est en cours de rédaction. Revenez bientôt pour des guides sur le déploiement, l'hébergement et l'observabilité."
           }
         }
       }
@@ -1264,6 +2260,24 @@
             "state": "translated",
             "value": "Alojamiento, despliegue y observabilidad."
           }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Хостинг, развёртывание и наблюдаемость."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hosting, deployment e osservabilità."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hébergement, déploiement et observabilité."
+          }
         }
       }
     },
@@ -1285,6 +2299,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Página del producto Stage →"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Страница продукта Stage →"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pagina prodotto Stage →"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Page produit Stage →"
           }
         }
       }
@@ -1308,6 +2340,24 @@
             "state": "translated",
             "value": "Documentación de Stage"
           }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Документация Stage"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Documentazione Stage"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Documentation Stage"
+          }
         }
       }
     },
@@ -1330,6 +2380,24 @@
             "state": "translated",
             "value": "Todo lo que necesitas para construir con el ecosistema Allegro"
           }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Всё, что нужно для работы с экосистемой Allegro"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tutto ciò che serve per costruire con l'ecosistema Allegro"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tout ce dont vous avez besoin pour construire avec l'écosystème Allegro"
+          }
         }
       }
     },
@@ -1351,6 +2419,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Documentación"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Документация"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Documentazione"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Documentation"
           }
         }
       }
@@ -1376,6 +2462,18 @@
           }
         },
         "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "404"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "404"
+          }
+        },
+        "fr": {
           "stringUnit": {
             "state": "translated",
             "value": "404"
@@ -1408,6 +2506,18 @@
             "state": "translated",
             "value": "Страница, которую вы ищете, не существует\nили была перемещена."
           }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La pagina che stai cercando non esiste\no è stata spostata."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La page que vous recherchez n'existe pas\nou a été déplacée."
+          }
         }
       }
     },
@@ -1435,6 +2545,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Страница не найдена"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pagina non trovata"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Page non trouvée"
           }
         }
       }
@@ -1464,6 +2586,18 @@
             "state": "translated",
             "value": "© 2026 Allegro Systems. Все права защищены."
           }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "© 2026 Allegro Systems. Tutti i diritti riservati."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "© 2026 Allegro Systems. Tous droits réservés."
+          }
         }
       }
     },
@@ -1491,6 +2625,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Превращаем ваши идеи в реальность."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dalle tue idee alla realtà."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De vos idées à la réalité."
           }
         }
       }
@@ -1520,6 +2666,18 @@
             "state": "translated",
             "value": "Документация"
           }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Documentazione"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Documentation"
+          }
         }
       }
     },
@@ -1547,6 +2705,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Документация Composer"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Documentazione Composer"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Documentation Composer"
           }
         }
       }
@@ -1576,6 +2746,18 @@
             "state": "translated",
             "value": "Рабочие процессы визуального редактора, библиотека компонентов и опции экспорта."
           }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Workflow dell'editor visuale, libreria componenti e opzioni di esportazione."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Workflows de l'éditeur visuel, bibliothèque de composants et options d'export."
+          }
         }
       }
     },
@@ -1603,6 +2785,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Документация Score"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Documentazione Score"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Documentation Score"
           }
         }
       }
@@ -1632,6 +2826,18 @@
             "state": "translated",
             "value": "Руководства, справочник API и учебные материалы по фреймворку Score."
           }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Guide, riferimento API e tutorial per il framework Score."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Guides, référence API et tutoriels pour le framework Score."
+          }
         }
       }
     },
@@ -1659,6 +2865,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Документация Stage"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Documentazione Stage"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Documentation Stage"
           }
         }
       }
@@ -1688,6 +2906,18 @@
             "state": "translated",
             "value": "Руководства по развёртыванию, настройке масштабирования и наблюдаемости."
           }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Guide al deployment, configurazione dello scaling e setup dell'osservabilità."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Guides de déploiement, configuration du scaling et mise en place de l'observabilité."
+          }
         }
       }
     },
@@ -1715,6 +2945,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Интегрированный по дизайну"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Integrato per Design"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Intégré par Design"
           }
         }
       }
@@ -1744,6 +2986,18 @@
             "state": "translated",
             "value": "Score, Stage, Composer и Libretto работают вместе как единая система — без связующего кода."
           }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Score, Stage, Composer e Libretto lavorano insieme come un sistema coeso — nessun codice collante necessario."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Score, Stage, Composer et Libretto fonctionnent ensemble comme un système cohérent — aucun code de liaison nécessaire."
+          }
         }
       }
     },
@@ -1771,6 +3025,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Открытый и прозрачный"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aperto e Trasparente"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ouvert et Transparent"
           }
         }
       }
@@ -1800,6 +3066,18 @@
             "state": "translated",
             "value": "Открытый исходный код с приверженностью свободе разработчиков. Исследуйте, расширяйте и вносите вклад."
           }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Core open-source con un impegno per la libertà degli sviluppatori. Ispeziona, estendi e contribuisci."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Noyau open-source avec un engagement pour la liberté des développeurs. Inspectez, étendez et contribuez."
+          }
         }
       }
     },
@@ -1827,6 +3105,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Swift в первую очередь"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Swift-First"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Swift-First"
           }
         }
       }
@@ -1856,6 +3146,18 @@
             "state": "translated",
             "value": "Построен с нуля на Swift. Без обёрток, без компромиссов — нативная производительность и безопасность типов."
           }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Costruito da zero in Swift. Nessun wrapper, nessun compromesso — solo prestazioni native e sicurezza dei tipi."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Construit de zéro en Swift. Pas de wrappers, pas de compromis — juste des performances natives et la sûreté des types."
+          }
         }
       }
     },
@@ -1883,6 +3185,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Экосистема инструментов на Swift для создания, хостинга и публикации в современном вебе."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un ecosistema Swift-first di strumenti per costruire, ospitare e pubblicare sul web moderno."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un écosystème Swift-first d'outils pour construire, héberger et publier sur le web moderne."
           }
         }
       }
@@ -1912,6 +3226,18 @@
             "state": "translated",
             "value": "Превращаем ваши идеи\nв реальность"
           }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dalle tue idee\nalla realtà"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De vos idées\nà la réalité"
+          }
         }
       }
     },
@@ -1939,6 +3265,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Продукты"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prodotti"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Produits"
           }
         }
       }
@@ -1968,6 +3306,18 @@
             "state": "translated",
             "value": "Почему Allegro"
           }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Perché Allegro"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pourquoi Allegro"
+          }
         }
       }
     },
@@ -1989,6 +3339,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Editor de Texto Enriquecido  ·  Enfocado en Desarrolladores  ·  Descubrimiento Integrado"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Редактор форматированного текста  ·  Для разработчиков  ·  Встроенное обнаружение"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Editor Rich Text  ·  Per sviluppatori  ·  Discovery integrata"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Éditeur Rich Text  ·  Pour développeurs  ·  Découverte intégrée"
           }
         }
       }
@@ -2012,6 +3380,24 @@
             "state": "translated",
             "value": "Una plataforma de blogs para desarrolladores y escritores técnicos — impulsada por Score y Stage. Una experiencia de edición enriquecida, sin distracciones, diseñada para que tus ideas lleguen a las personas adecuadas. Próximamente."
           }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Платформа для блогов, созданная для разработчиков и технических писателей — на базе Score и Stage. Богатый опыт редактирования, без отвлечений, спроектирован, чтобы ваши идеи дошли до нужных людей. Скоро."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una piattaforma di blogging per sviluppatori e scrittori tecnici — powered by Score e Stage. Un'esperienza di editing ricca, senza distrazioni, progettata per far arrivare le tue idee alle persone giuste. In arrivo."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Une plateforme de blogging pour les développeurs et rédacteurs techniques — propulsée par Score et Stage. Une expérience d'édition riche, sans distraction, conçue pour que vos idées atteignent les bonnes personnes. Bientôt disponible."
+          }
         }
       }
     },
@@ -2033,6 +3419,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Análisis de Audiencia"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Аналитика аудитории"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Analisi del Pubblico"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Analytique d'Audience"
           }
         }
       }
@@ -2056,6 +3460,24 @@
             "state": "translated",
             "value": "Comprende quién lee tu trabajo con estadísticas integradas de vistas, lecturas e interacción."
           }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Понимайте, кто читает ваши работы, с помощью встроенной статистики просмотров, прочтений и вовлечённости."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scopri chi legge il tuo lavoro con statistiche integrate su visualizzazioni, letture e coinvolgimento."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Comprenez qui lit votre travail grâce aux statistiques intégrées de vues, lectures et engagement."
+          }
         }
       }
     },
@@ -2077,6 +3499,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Feed de Descubrimiento"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Лента обнаружения"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Feed di Scoperta"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fil de Découverte"
           }
         }
       }
@@ -2100,6 +3540,24 @@
             "state": "translated",
             "value": "Sigue escritores, cura listas de lectura y muestra publicaciones a través de etiquetas y recomendaciones."
           }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Подписывайтесь на авторов, составляйте списки чтения и находите публикации через теги и рекомендации."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Segui gli scrittori, cura liste di lettura e scopri post tramite tag e raccomandazioni."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Suivez des auteurs, créez des listes de lecture et découvrez des articles via les tags et recommandations."
+          }
         }
       }
     },
@@ -2121,6 +3579,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Editor de Texto Enriquecido"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Редактор форматированного текста"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Editor Rich Text"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Éditeur Rich Text"
           }
         }
       }
@@ -2144,6 +3620,24 @@
             "state": "translated",
             "value": "Un editor basado en bloques con formato enriquecido, contenido multimedia incrustado y modo Markdown opcional."
           }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Блочный редактор с богатым форматированием, встраиванием медиа и опциональным режимом Markdown."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un editor a blocchi con formattazione ricca, embed multimediali e modalità Markdown opzionale."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un éditeur par blocs avec mise en forme riche, intégration de médias et mode Markdown optionnel."
+          }
         }
       }
     },
@@ -2165,6 +3659,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Una Plataforma\npara Escritores"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Платформа\nдля писателей"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una Piattaforma\nper Scrittori"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Une Plateforme\npour les Auteurs"
           }
         }
       }
@@ -2188,6 +3700,24 @@
             "state": "translated",
             "value": "Escribe, publica y haz crecer tu audiencia"
           }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Пишите, публикуйте и расширяйте свою аудиторию"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scrivi, pubblica e fai crescere il tuo pubblico"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Écrivez, publiez et développez votre audience"
+          }
         }
       }
     },
@@ -2206,6 +3736,24 @@
           }
         },
         "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Libretto"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Libretto"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Libretto"
+          }
+        },
+        "fr": {
           "stringUnit": {
             "state": "translated",
             "value": "Libretto"
@@ -2238,6 +3786,18 @@
             "state": "translated",
             "value": "Allegro"
           }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Allegro"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Allegro"
+          }
         }
       }
     },
@@ -2262,6 +3822,18 @@
           }
         },
         "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Systems"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Systems"
+          }
+        },
+        "fr": {
           "stringUnit": {
             "state": "translated",
             "value": "Systems"
@@ -2294,6 +3866,18 @@
             "state": "translated",
             "value": "О нас"
           }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chi Siamo"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "À Propos"
+          }
         }
       }
     },
@@ -2321,6 +3905,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Блог"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Blog"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Blog"
           }
         }
       }
@@ -2350,6 +3946,18 @@
             "state": "translated",
             "value": "Документация"
           }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Docs"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Docs"
+          }
         }
       }
     },
@@ -2377,6 +3985,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Рабочие процессы визуального редактора и библиотека компонентов"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Workflow dell'editor visuale e libreria componenti"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Workflows de l'éditeur visuel et bibliothèque de composants"
           }
         }
       }
@@ -2406,6 +4026,18 @@
             "state": "translated",
             "value": "Руководства, справочник API и учебные материалы"
           }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Guide, riferimento API e tutorial"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Guides, référence API et tutoriels"
+          }
         }
       }
     },
@@ -2433,6 +4065,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Руководства по развёртыванию и настройке масштабирования"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Guide al deployment e configurazione dello scaling"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Guides de déploiement et configuration du scaling"
           }
         }
       }
@@ -2462,6 +4106,18 @@
             "state": "translated",
             "value": "Документация"
           }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Documentazione"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Documentation"
+          }
         }
       }
     },
@@ -2490,6 +4146,18 @@
             "state": "translated",
             "value": "Продукты"
           }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prodotti"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Produits"
+          }
         }
       }
     },
@@ -2514,6 +4182,18 @@
           }
         },
         "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Composer"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Composer"
+          }
+        },
+        "fr": {
           "stringUnit": {
             "state": "translated",
             "value": "Composer"
@@ -2546,6 +4226,18 @@
             "state": "translated",
             "value": "Нативный визуальный редактор для macOS и iPad для Score UI"
           }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Editor visuale nativo per macOS e iPad per le UI di Score"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Éditeur visuel natif macOS et iPad pour les UI Score"
+          }
         }
       }
     },
@@ -2570,6 +4262,18 @@
           }
         },
         "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Libretto"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Libretto"
+          }
+        },
+        "fr": {
           "stringUnit": {
             "state": "translated",
             "value": "Libretto"
@@ -2602,6 +4306,18 @@
             "state": "translated",
             "value": "Эталонное приложение, полностью построенное на Score и Stage"
           }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "App di riferimento costruita interamente su Score e Stage"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Application de référence entièrement construite sur Score et Stage"
+          }
         }
       }
     },
@@ -2626,6 +4342,18 @@
           }
         },
         "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Score"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Score"
+          }
+        },
+        "fr": {
           "stringUnit": {
             "state": "translated",
             "value": "Score"
@@ -2658,6 +4386,18 @@
             "state": "translated",
             "value": "Swift веб-фреймворк для компонентов, HTML, CSS и JS"
           }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Framework web Swift per componenti, HTML, CSS e JS"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Framework web Swift pour composants, HTML, CSS et JS"
+          }
         }
       }
     },
@@ -2682,6 +4422,18 @@
           }
         },
         "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stage"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stage"
+          }
+        },
+        "fr": {
           "stringUnit": {
             "state": "translated",
             "value": "Stage"
@@ -2714,6 +4466,18 @@
             "state": "translated",
             "value": "Развёртывание, масштабирование и мониторинг приложений Score"
           }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deploy, scala e monitora le applicazioni Score"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Déployez, scalez et observez les applications Score"
+          }
         }
       }
     },
@@ -2741,6 +4505,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Нативный визуальный редактор для macOS и iPad. Создавайте Score UI без компилятора."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L'editor visuale nativo per macOS e iPad. Costruisci UI Score senza toccare il compilatore."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L'éditeur visuel natif pour macOS et iPad. Construisez des UI Score sans toucher au compilateur."
           }
         }
       }
@@ -2770,6 +4546,18 @@
             "state": "translated",
             "value": "Эталонное приложение. Proof-of-concept, полностью построенный на Score и Stage."
           }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L'applicazione di riferimento. Un proof-of-concept costruito interamente su Score e Stage."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L'application de référence. Un proof-of-concept entièrement construit sur Score et Stage."
+          }
         }
       }
     },
@@ -2797,6 +4585,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Swift веб-фреймворк. Пишите компоненты, компилируйте в HTML, CSS и JS."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il framework web Swift. Scrivi componenti, compila in HTML, CSS e JS."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le framework web Swift. Écrivez des composants, compilez en HTML, CSS et JS."
           }
         }
       }
@@ -2826,6 +4626,18 @@
             "state": "translated",
             "value": "Слой хостинга и операций. Развёртывайте, масштабируйте и мониторьте приложения Score."
           }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il livello di hosting e operazioni. Deploy, scala e monitora le applicazioni Score."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La couche d'hébergement et d'opérations. Déployez, scalez et observez les applications Score."
+          }
         }
       }
     },
@@ -2853,6 +4665,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Вертикально интегрированная экосистема инструментов для современного веба — от фреймворка до развёртывания."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un ecosistema verticalmente integrato di strumenti per il web moderno — dal framework al deployment."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un écosystème verticalement intégré d'outils pour le web moderne — du framework au déploiement."
           }
         }
       }
@@ -2882,6 +4706,18 @@
             "state": "translated",
             "value": "Продукты"
           }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prodotti"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Produits"
+          }
         }
       }
     },
@@ -2903,6 +4739,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Autenticación Incluida"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Аутентификация из коробки"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Autenticazione Pronta all'Uso"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Authentification Prête à l'Emploi"
           }
         }
       }
@@ -2926,6 +4780,24 @@
             "state": "translated",
             "value": "Añade inicio de sesión, sesiones y protecciones de ruta con pocas líneas. Las integraciones manejan los detalles del proveedor."
           }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Добавьте логин, сессии и защиту маршрутов в несколько строк. Интеграции с провайдерами берут на себя детали."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aggiungi login, sessioni e protezione delle route con poche righe. Le integrazioni gestiscono i dettagli del provider."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ajoutez login, sessions et protection des routes en quelques lignes. Les intégrations gèrent les détails du fournisseur."
+          }
         }
       }
     },
@@ -2947,6 +4819,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Publica como Estático o Servidor"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Статика или сервер"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pubblica come Statico o Server"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Publiez en Statique ou Serveur"
           }
         }
       }
@@ -2970,6 +4860,24 @@
             "state": "translated",
             "value": "Genera un sitio estático o ejecuta un servidor en vivo desde la misma base de código. Un comando en cualquier caso."
           }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Генерируйте статический сайт или запускайте живой сервер из одной кодовой базы. Одна команда в любом случае."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Genera un sito statico o esegui un server live dalla stessa codebase. Un solo comando in entrambi i casi."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Générez un site statique ou lancez un serveur live depuis la même base de code. Une seule commande dans les deux cas."
+          }
         }
       }
     },
@@ -2991,6 +4899,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Escribe Páginas en Swift"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Пишите страницы на Swift"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scrivi Pagine in Swift"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Écrivez des Pages en Swift"
           }
         }
       }
@@ -3014,6 +4940,24 @@
             "state": "translated",
             "value": "Define maquetaciones, componentes y contenido con result builders de Swift. Sin plantillas ni manipulación de cadenas."
           }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Определяйте макеты, компоненты и контент с помощью Swift result builders. Никаких шаблонов и манипуляций со строками."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Definisci layout, componenti e contenuti con i result builder di Swift. Nessun template o manipolazione di stringhe."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Définissez layouts, composants et contenus avec les result builders Swift. Pas de templates ni de manipulation de chaînes."
+          }
         }
       }
     },
@@ -3035,6 +4979,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Persistencia Integrada"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Встроенная персистентность"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Persistenza Integrata"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Persistance Intégrée"
           }
         }
       }
@@ -3058,6 +5020,24 @@
             "state": "translated",
             "value": "Almacena y consulta datos sin necesidad de un ORM externo. Entidades, migraciones y consultas son parte del framework."
           }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Храните и запрашивайте данные без подключения ORM. Сущности, миграции и запросы — часть фреймворка."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Memorizza e interroga dati senza aggiungere un ORM. Entità, migrazioni e query fanno parte del framework."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stockez et interrogez des données sans ajouter d'ORM. Entités, migrations et requêtes font partie du framework."
+          }
         }
       }
     },
@@ -3079,6 +5059,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Interfaz Reactiva"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Реактивный UI"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "UI Reattiva"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "UI Réactive"
           }
         }
       }
@@ -3102,6 +5100,24 @@
             "state": "translated",
             "value": "Añade elementos interactivos con señales. Los cambios de estado actualizan la página al instante, sin recarga completa."
           }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Добавляйте интерактивные элементы с помощью сигналов. Изменения состояния обновляют страницу мгновенно, без полной перезагрузки."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aggiungi elementi interattivi con i segnali. I cambiamenti di stato aggiornano la pagina istantaneamente, senza ricaricamento completo."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ajoutez des éléments interactifs avec les signaux. Les changements d'état mettent à jour la page instantanément, sans rechargement complet."
+          }
         }
       }
     },
@@ -3123,6 +5139,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Tematizable por Defecto"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Темизация по умолчанию"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Temi di Default"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Thèmes par Défaut"
           }
         }
       }
@@ -3146,6 +5180,24 @@
             "state": "translated",
             "value": "Configura colores, fuentes, espaciado y modo oscuro una vez. Cada componente los recoge automáticamente."
           }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Задайте цвета, шрифты, отступы и тёмный режим один раз. Все компоненты подхватят их автоматически."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Imposta colori, font, spaziatura e modalità scura una volta. Ogni componente li adotta automaticamente."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Définissez couleurs, polices, espacement et mode sombre une fois. Chaque composant les adopte automatiquement."
+          }
         }
       }
     },
@@ -3167,6 +5219,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Leer Documentación →"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Читать документацию →"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Leggi la documentazione →"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lire la documentation →"
           }
         }
       }
@@ -3190,6 +5260,24 @@
             "state": "translated",
             "value": "Ver en GitHub →"
           }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Смотреть на GitHub →"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vedi su GitHub →"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Voir sur GitHub →"
+          }
         }
       }
     },
@@ -3211,6 +5299,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Construye aplicaciones web completamente en Swift.\nResult builders para maquetación. Señales para estado. Un comando para publicar."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Создавайте веб-приложения полностью на Swift.\nResult builders для макетов. Сигналы для состояния. Одна команда для деплоя."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Costruisci applicazioni web interamente in Swift.\nResult builder per il layout. Segnali per lo stato. Un comando per pubblicare."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Construisez des applications web entièrement en Swift.\nResult builders pour le layout. Signaux pour l'état. Une commande pour publier."
           }
         }
       }
@@ -3234,6 +5340,24 @@
             "state": "translated",
             "value": "El framework web en Swift"
           }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Swift веб-фреймворк"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il framework web Swift"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le framework web Swift"
+          }
         }
       }
     },
@@ -3255,6 +5379,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "CSS Dirigido por el Compilador"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CSS на основе компилятора"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CSS Generato dal Compilatore"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CSS Piloté par le Compilateur"
           }
         }
       }
@@ -3278,6 +5420,24 @@
             "state": "translated",
             "value": "Las cadenas de modificadores compilan a nombres de clase con alcance. Conjuntos idénticos comparten una sola clase. Cero lógica de estilos en tiempo de ejecución."
           }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Цепочки модификаторов компилируются в изолированные имена классов. Одинаковые наборы модификаторов используют один класс. Никакой логики стилей во время выполнения."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le catene di modificatori compilano in nomi di classi con scope. Set di modificatori identici condividono una singola classe. Zero logica di stile a runtime."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les chaînes de modificateurs compilent en noms de classes scopés. Des ensembles de modificateurs identiques partagent une seule classe. Zéro logique de style au runtime."
+          }
         }
       }
     },
@@ -3299,6 +5459,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Reactividad Basada en Señales"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Реактивность на основе сигналов"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reattività Basata su Segnali"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Réactivité Basée sur les Signaux"
           }
         }
       }
@@ -3322,6 +5500,24 @@
             "state": "translated",
             "value": "Las declaraciones de estado en Swift se compilan a Señales TC39. Tres alcances: Aplicación (global), Página (se destruye al navegar), Elemento (por montaje)."
           }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Объявления состояния Swift транслируются в TC39 Signals. Три области: Application (глобальная), Page (уничтожается при навигации), Element (при монтировании)."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le dichiarazioni di stato Swift si traducono in TC39 Signals. Tre scope: Application (globale), Page (distrutto alla navigazione), Element (per mount)."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les déclarations d'état Swift se traduisent en TC39 Signals. Trois portées : Application (globale), Page (détruite à la navigation), Element (par montage)."
+          }
         }
       }
     },
@@ -3343,6 +5539,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Salida Estática Primero"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Статика в первую очередь"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Output Statico per Default"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sortie Statique par Défaut"
           }
         }
       }
@@ -3366,6 +5580,24 @@
             "state": "translated",
             "value": "Las páginas compilan a HTML + CSS equivalente en bytes por defecto. JS solo se emite cuando se usan @State o @Action."
           }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Страницы компилируются в байт-эквивалентный HTML + CSS по умолчанию. JS генерируется только при использовании @State или @Action."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le pagine compilano in HTML + CSS byte-equivalent di default. JS viene emesso solo quando si usano @State o @Action."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les pages compilent en HTML + CSS byte-equivalent par défaut. Le JS n'est émis que lorsque @State ou @Action sont utilisés."
+          }
         }
       }
     },
@@ -3388,6 +5620,24 @@
             "state": "translated",
             "value": "El Framework Web en Swift"
           }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Swift веб-фреймворк"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il Framework Web Swift"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le Framework Web Swift"
+          }
         }
       }
     },
@@ -3406,6 +5656,24 @@
           }
         },
         "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Score"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Score"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Score"
+          }
+        },
+        "fr": {
           "stringUnit": {
             "state": "translated",
             "value": "Score"
@@ -3432,6 +5700,24 @@
             "state": "translated",
             "value": "Lo Que Obtienes"
           }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Что вы получаете"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cosa Ottieni"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ce Que Vous Obtenez"
+          }
         }
       }
     },
@@ -3453,6 +5739,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Aloja Salida Estática  ·  Aloja Binarios  ·  Cargas Swift como Objetivo de Primera Clase"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Хостинг статики  ·  Хостинг бинарных файлов  ·  Swift-нагрузки как первоклассная цель"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hosting Output Statico  ·  Hosting Binari Runtime  ·  Workload Swift come Target di Prima Classe"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hébergement Statique  ·  Hébergement Binaires Runtime  ·  Charges Swift comme Cible de Première Classe"
           }
         }
       }
@@ -3476,6 +5780,24 @@
             "state": "translated",
             "value": "La capa de alojamiento y operaciones del ecosistema Allegro — despliega, escala y observa aplicaciones Score sin configuración. Cargas de trabajo Swift como objetivo de despliegue de primera clase, desde salida estática hasta binarios completos. Próximamente."
           }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Слой хостинга и операций для экосистемы Allegro — развёртывайте, масштабируйте и мониторьте приложения Score без конфигурации. Swift-нагрузки как первоклассная цель развёртывания, от статики до полных бинарных файлов. Скоро."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il livello di hosting e operazioni per l'ecosistema Allegro — deploy, scala e monitora le applicazioni Score senza configurazione. Workload Swift come target di deployment di prima classe, dall'output statico ai binari runtime completi. In arrivo."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La couche d'hébergement et d'opérations pour l'écosystème Allegro — déployez, scalez et observez les applications Score sans configuration. Les charges Swift comme cible de déploiement de première classe, de la sortie statique aux binaires runtime complets. Bientôt disponible."
+          }
         }
       }
     },
@@ -3497,6 +5819,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Despliegues Sin Configuración"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Деплой без конфигурации"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deploy Zero-Config"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Déploiement Zéro-Config"
           }
         }
       }
@@ -3520,6 +5860,24 @@
             "state": "translated",
             "value": "Despliega aplicaciones Swift con un solo comando. Sin archivos de configuración, sin plantilla."
           }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Развёртывайте Swift-приложения одной командой. Никаких файлов конфигурации, никакого шаблонного кода."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Distribuisci applicazioni Swift con un singolo comando. Nessun file di configurazione, nessun boilerplate."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Déployez des applications Swift avec une seule commande. Pas de fichiers de configuration, pas de boilerplate."
+          }
         }
       }
     },
@@ -3541,6 +5899,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Monitoreo Integrado"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Встроенный мониторинг"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Monitoraggio Integrato"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Monitoring Intégré"
           }
         }
       }
@@ -3564,6 +5940,24 @@
             "state": "translated",
             "value": "Registros en tiempo real, métricas y verificaciones de salud incluidas. Sabe exactamente qué está pasando."
           }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Логи в реальном времени, метрики и проверки здоровья из коробки. Знайте, что происходит."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Log in tempo reale, metriche e health check pronti all'uso. Sappi esattamente cosa sta succedendo."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Logs en temps réel, métriques et health checks prêts à l'emploi. Sachez exactement ce qui se passe."
+          }
         }
       }
     },
@@ -3585,6 +5979,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Enrutamiento Nativo en el Borde"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Нативная edge-маршрутизация"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Routing Edge-Native"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Routage Edge-Native"
           }
         }
       }
@@ -3608,6 +6020,24 @@
             "state": "translated",
             "value": "SSL automático, dominios personalizados y distribución global en el borde desde el primer día."
           }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Автоматический SSL, пользовательские домены и глобальная edge-дистрибуция встроены с первого дня."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SSL automatico, domini personalizzati e distribuzione edge globale integrati dal primo giorno."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SSL automatique, domaines personnalisés et distribution edge globale intégrés dès le premier jour."
+          }
         }
       }
     },
@@ -3629,6 +6059,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "La Capa de Alojamiento\ny Operaciones"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Слой хостинга\nи операций"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il Livello di Hosting\ne Operazioni"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La Couche d'Hébergement\net d'Opérations"
           }
         }
       }
@@ -3652,6 +6100,24 @@
             "state": "translated",
             "value": "La capa de alojamiento y operaciones"
           }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Слой хостинга и операций"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il livello di hosting e operazioni"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La couche d'hébergement et d'opérations"
+          }
         }
       }
     },
@@ -3670,6 +6136,24 @@
           }
         },
         "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stage"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stage"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stage"
+          }
+        },
+        "fr": {
           "stringUnit": {
             "state": "translated",
             "value": "Stage"
@@ -3702,6 +6186,18 @@
             "state": "translated",
             "value": "Все"
           }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tutto"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tout"
+          }
         }
       }
     },
@@ -3729,6 +6225,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "← К документации"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "← Torna alla documentazione"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "← Retour à la documentation"
           }
         }
       }
@@ -3758,6 +6266,18 @@
             "state": "translated",
             "value": "← На главную"
           }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "← Torna alla home"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "← Retour à l'accueil"
+          }
         }
       }
     },
@@ -3785,6 +6305,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Скоро"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In Arrivo"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bientôt"
           }
         }
       }
@@ -3814,6 +6346,18 @@
             "state": "translated",
             "value": "СКОРО"
           }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "IN ARRIVO"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "BIENTÔT"
+          }
         }
       }
     },
@@ -3838,6 +6382,18 @@
           }
         },
         "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "your@email.com"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "your@email.com"
+          }
+        },
+        "fr": {
           "stringUnit": {
             "state": "translated",
             "value": "your@email.com"
@@ -3870,6 +6426,18 @@
             "state": "translated",
             "value": "Пример"
           }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Esempio"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Exemple"
+          }
         }
       }
     },
@@ -3897,6 +6465,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Начать"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inizia"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Commencer"
           }
         }
       }
@@ -3926,6 +6506,18 @@
             "state": "translated",
             "value": "Особенности"
           }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In Evidenza"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Points Forts"
+          }
         }
       }
     },
@@ -3953,6 +6545,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Узнать больше →"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scopri di più →"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En savoir plus →"
           }
         }
       }
@@ -3982,6 +6586,18 @@
             "state": "translated",
             "value": "Далее →"
           }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Avanti →"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Suivant →"
+          }
         }
       }
     },
@@ -4009,6 +6625,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Нет следующей страницы"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nessuna pagina successiva"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pas de page suivante"
           }
         }
       }
@@ -4038,6 +6666,18 @@
             "state": "translated",
             "value": "Нет предыдущей страницы"
           }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nessuna pagina precedente"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pas de page précédente"
+          }
         }
       }
     },
@@ -4065,6 +6705,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Уведомить"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Avvisami"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Me Notifier"
           }
         }
       }
@@ -4094,6 +6746,18 @@
             "state": "translated",
             "value": "ВЫВОД"
           }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OUTPUT"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SORTIE"
+          }
         }
       }
     },
@@ -4121,6 +6785,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "← Назад"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "← Precedente"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "← Précédent"
           }
         }
       }
@@ -4150,6 +6826,18 @@
             "state": "translated",
             "value": "Читать документацию →"
           }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Leggi la documentazione →"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lire la documentation →"
+          }
         }
       }
     },
@@ -4177,6 +6865,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Результат"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Risultato"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Résultat"
           }
         }
       }
@@ -4206,6 +6906,18 @@
             "state": "translated",
             "value": "ИСХОДНЫЙ КОД"
           }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SORGENTE"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SOURCE"
+          }
         }
       }
     },
@@ -4234,6 +6946,18 @@
             "state": "translated",
             "value": "Смотреть на GitHub"
           }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vedi su GitHub"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Voir sur GitHub"
+          }
         }
       }
     },
@@ -4261,6 +6985,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Что ожидать"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cosa Aspettarsi"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "À Quoi S'Attendre"
           }
         }
       }

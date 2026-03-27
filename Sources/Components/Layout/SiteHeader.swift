@@ -1,5 +1,6 @@
 import Score
 import ScoreLucide
+import AllegroTheme
 
 @Component
 struct SiteHeader {
@@ -31,6 +32,7 @@ struct SiteHeader {
                 .flex(.row, align: .center)
                 .font(decoration: TextDecoration.none)
 
+                LanguageDropdown()
                 ThemeToggle()
             }
             .flex(.row, gap: 12, align: .center, justify: .end)
