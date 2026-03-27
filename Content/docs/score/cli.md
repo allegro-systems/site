@@ -82,7 +82,7 @@ A typical `mise.toml` configuration:
 
 ```toml
 [tools]
-swift = "6.2"
+swift = "6.3"
 
 [tasks.dev]
 run = 'swift run score dev --port "${usage_port?}"'

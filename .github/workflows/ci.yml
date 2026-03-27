@@ -1,0 +1,44 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check out Score
+        uses: actions/checkout@v4
+        with:
+          repository: allegro-systems/score
+          path: _score
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Swift
+        uses: swift-actions/setup-swift@v2
+        with:
+          swift-version: "6.3"
+
+      - name: Generate Score documentation as Markdown
+        working-directory: _score
+        run: |
+          swift package generate-documentation \
+            --target Score \
+            --output-path ../_docs-output \
+            --enable-experimental-markdown-output
+
+      - name: Sync generated docs to Content/docs/
+        run: |
+          mkdir -p Content/docs/score
+          cp _docs-output/markdown/*.md Content/docs/score/ 2>/dev/null || true
+
+      - name: Format check
+        run: swift format lint --strict --recursive Sources/
+
+      - name: Build
+        run: swift build

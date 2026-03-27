@@ -1,8 +1,14 @@
 [tools]
-swift = "6.2"
+swift = "6.3"
 hk = { version = "latest", postinstall = "hk install" }
+fnox = "latest"
+infisical = "latest"
+
+[plugins]
+fnox-env = "https://github.com/jdx/mise-env-fnox"
 
 [env]
+_.fnox-env = { tools = true }
 SCORE_EDITOR = "zed"
 
 # Dev Server
