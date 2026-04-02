@@ -4,91 +4,110 @@ order: 4
 section: Styling
 ---
 
-Score's theme system centralizes your design tokens — colors, typography, spacing, and borders — in a single `Theme` conformance. Every page and component in your site inherits these values.
+Score's theme system centralizes your design tokens in a single struct. Use the `@Theme` macro to define colors, fonts, and dark mode.
 
 ## Defining a theme
 
 ```swift
-struct MyTheme: Theme {
-    var name: String { "default" }
-
-    var colors: ColorSet {
-        ColorSet {
-            ColorRole(.surface, light: .oklch(l: 0.99, c: 0.0, h: 0))
-            ColorRole(.text, light: .oklch(l: 0.15, c: 0.0, h: 0))
-            ColorRole(.accent, light: .oklch(l: 0.55, c: 0.15, h: 250))
-            ColorRole(.border, light: .oklch(l: 0.90, c: 0.01, h: 250))
-            ColorRole(.muted, light: .oklch(l: 0.55, c: 0.02, h: 250))
-        }
+@Theme
+struct AppTheme {
+    var extraColorRoles: [String: ColorToken] {
+        ["elevated": .oklch(0.96, 0.004, 240)]
     }
 
-    var fonts: FontSet {
-        FontSet {
-            FontFamily(.sans, name: "Inter", source: .google)
-            FontFamily(.mono, name: "JetBrains Mono", source: .google)
-        }
+    var extraFontFamilies: [String: String] {
+        ["brand": "'Inter', system-ui, sans-serif"]
     }
 
-    var typeScaleBase: Int { 16 }
-    var spacingUnit: Int { 4 }
-    var radiusBase: Int { 8 }
+    var dark: (any ThemePatch)? { AppDarkPatch() }
+
+    var named: [String: any ThemePatch] {
+        ["dark": AppDarkPatch()]
+    }
 }
+```
+
+The `@Theme` macro generates `Theme` protocol conformance. Register it in your application:
+
+```swift
+var theme: (any Theme)? { AppTheme() }
 ```
 
 ## Color tokens
 
-Colors are defined using semantic roles. The built-in roles include:
+Colors use semantic roles. The built-in roles:
 
-- `.surface` — page background
-- `.text` — primary text
-- `.accent` — interactive elements and highlights
-- `.border` — borders and dividers
-- `.muted` — secondary text
-- `.destructive` — error states
-- `.success` — success states
+- `.text` -- primary text color
+- `.surface` -- page and container backgrounds
+- `.accent` -- interactive elements, links, highlights
+- `.border` -- borders and dividers
+- `.muted` -- secondary text, captions
+- `.destructive` -- error states, delete actions
+- `.success` -- success states, confirmations
 
-You can also define custom named colors:
-
-```swift
-ColorRole(.named("score"), light: .oklch(l: 0.65, c: 0.18, h: 145))
-ColorRole(.named("stage"), light: .oklch(l: 0.65, c: 0.18, h: 280))
-```
-
-To use custom colors as static properties (e.g. `.score` instead of `ColorToken("score")`), use the `#colorTokens` macro:
+Add custom color roles through `extraColorRoles`:
 
 ```swift
-extension ColorToken {
-    #colorTokens("score", "stage", "brand")
+var extraColorRoles: [String: ColorToken] {
+    [
+        "elevated": .oklch(0.96, 0.004, 240),
+        "dimmer": .oklch(0.85, 0.01, 240),
+    ]
 }
 ```
 
-This generates a `ColorToken` extension with a static property for each name, so you can reference them directly in your modifiers:
+## #colorTokens macro
+
+To use custom colors as static properties (`.elevated` instead of `ColorToken("elevated")`), use the `#colorTokens` macro:
 
 ```swift
-.font(color: .score)
-.background(.stage)
+extension ColorToken {
+    #colorTokens("elevated", "dimmer", "brand")
+}
 ```
+
+This generates static properties so you can write:
+
+```swift
+.background(.elevated)
+.font(color: .dimmer)
+```
+
+The `@Theme` macro automatically generates this extension in `Sources/Generated/ThemeColorTokens.swift` on each build, based on the keys in your `extraColorRoles`. You only need `#colorTokens` if you want to define them manually elsewhere.
 
 ## OKLCH color space
 
-Score uses OKLCH as its primary color space. OKLCH provides perceptually uniform lightness, which means colors at the same L value appear equally bright to the human eye — making it ideal for building consistent color palettes.
+Score uses OKLCH as its primary color space. OKLCH provides perceptually uniform lightness -- colors at the same L value appear equally bright to the human eye.
 
 ```swift
 // OKLCH: Lightness (0-1), Chroma (0-0.4), Hue (0-360)
-Color.oklch(l: 0.65, c: 0.15, h: 250)
+.oklch(0.65, 0.15, 250)    // A blue
+.oklch(0.65, 0.18, 145)    // A green at the same perceived brightness
+.oklch(0.65, 0.18, 30)     // An orange at the same perceived brightness
+```
+
+You can also use OKLCH directly in modifiers without defining a theme role:
+
+```swift
+.font(color: .oklch(0.75, 0.15, 200))
+.background(.oklch(0.98, 0.005, 240))
 ```
 
 ## Dark mode
 
-Add dark mode support with a `ThemePatch`:
+Add dark mode with a `ThemePatch`:
 
 ```swift
-struct DarkPatch: ThemePatch {
-    var colors: ColorSet {
-        ColorSet {
-            ColorRole(.surface, light: .oklch(l: 0.12, c: 0.01, h: 250))
-            ColorRole(.text, light: .oklch(l: 0.93, c: 0.01, h: 250))
-        }
+struct AppDarkPatch: ThemePatch {
+    var colorRoles: [String: ColorToken]? {
+        [
+            "surface": .oklch(0.17, 0.014, 240),
+            "text": .oklch(0.93, 0.004, 240),
+            "border": .oklch(0.26, 0.012, 240),
+            "accent": .oklch(0.68, 0.13, 215),
+            "muted": .oklch(0.58, 0.006, 240),
+            "elevated": .oklch(0.22, 0.012, 240),
+        ]
     }
 }
 ```
@@ -96,28 +115,46 @@ struct DarkPatch: ThemePatch {
 Register the patch in your theme:
 
 ```swift
-var darkPatch: (any ThemePatch)? { DarkPatch() }
+var dark: (any ThemePatch)? { AppDarkPatch() }
 ```
 
-Score automatically generates `prefers-color-scheme: dark` media queries for overridden values.
+Score generates `prefers-color-scheme: dark` media queries for all overridden values. You only need to override the roles that change -- everything else inherits from the base theme.
 
-## Typography
+## Named theme patches
 
-Font families map to logical roles used throughout your modifiers:
+Define additional named patches for manual switching:
 
 ```swift
-.font(.sans, size: 16)   // Uses the sans-serif family from your theme
-.font(.mono, size: 14)   // Uses the monospace family
-.font(.serif, size: 24)  // Uses the serif family
+var named: [String: any ThemePatch] {
+    ["dark": AppDarkPatch()]
+}
 ```
 
-Score handles `@font-face` declarations and Google Fonts loading automatically based on your `FontSet` configuration.
-
-## Spacing and radius
-
-The `spacingUnit` and `radiusBase` values establish the grid for padding, margin, gap, and border-radius throughout your site. Modifier values are typically multiples of the spacing unit:
+Toggle themes with persisted state:
 
 ```swift
-.padding(24, at: .vertical)  // 24px = 6 spacing units (if unit = 4)
-.radius(8)                    // Uses the radius base
+@State(persisted: .theme) var isDark = false
+@Action mutating func toggleTheme() { isDark.toggle() }
 ```
+
+The `.theme` persistence key integrates with Score's theme switching system.
+
+## Font families
+
+Define font families that map to logical roles:
+
+```swift
+var extraFontFamilies: [String: String] {
+    ["brand": "'Inter', system-ui, sans-serif"]
+}
+```
+
+Use them in modifiers:
+
+```swift
+.font(.sans, size: 16)     // Uses the sans-serif family from your theme
+.font(.mono, size: 14)     // Uses the monospace family
+.font(.serif, size: 24)    // Uses the serif family
+```
+
+Score handles `@font-face` declarations and Google Fonts loading automatically.

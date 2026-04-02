@@ -4,20 +4,20 @@ order: 8
 section: Core Concepts
 ---
 
-Score uses a file-based routing model where each `Page` declares its own URL path. For dynamic server-side routes, `Controller` provides HTTP method handlers.
+Score uses a dual routing model: pages handle GET requests and produce HTML, controllers handle API endpoints with full HTTP method support.
 
 ## Page routing
 
-Every page has a static `path` property:
+Every page declares its URL with a static `path` property:
 
 ```swift
 struct AboutPage: Page {
     static let path = "/about"
-    var body: some Node { /* ... */ }
+    var body: some Node { Heading(.one) { "About" } }
 }
 ```
 
-Pages handle `GET` requests and produce HTML responses. The route table is built automatically from registered pages.
+The route table is built automatically from registered pages. Pages always respond to GET requests with rendered HTML.
 
 ## Content page routing
 
@@ -36,46 +36,101 @@ This generates `/docs/{slug}` for each file. An `index.md` file maps to `/docs` 
 
 ## Controllers
 
-For non-GET routes and API endpoints, use the `Controller` protocol:
+For API endpoints, use the `@Controller` and `@Route` macros:
 
 ```swift
-struct UserController: Controller {
-    static let path = "/api/users"
+@Controller("/api/items")
+struct ItemsController {
 
-    var routes: [Route] {
-        Route(.get) { request in
-            // Return user list
+    @Route(method: .get)
+    func list(_ ctx: RequestContext) async throws -> Response {
+        try .json(items)
+    }
+
+    @Route(method: .post)
+    func create(_ ctx: RequestContext) async throws -> Response {
+        guard let body = ctx.body,
+            let input = try? JSONDecoder().decode(CreateInput.self, from: body)
+        else {
+            return .error("Invalid request body")
         }
-        Route(.post) { request in
-            // Create user
+        let item = Item(id: UUID(), title: input.title)
+        return try .json(item, status: .created)
+    }
+
+    @Route(":id", method: .put)
+    func update(_ ctx: RequestContext) async throws -> Response {
+        guard let id = ctx.pathParameters["id"] else {
+            return .error("Missing ID")
         }
+        // update logic
+        return .ok
+    }
+
+    @Route(":id", method: .delete)
+    func delete(_ ctx: RequestContext) async throws -> Response {
+        guard let id = ctx.pathParameters["id"] else {
+            return .error("Missing ID")
+        }
+        // delete logic
+        return .ok
     }
 }
 ```
+
+`@Controller` takes a base path. `@Route` takes an optional sub-path and HTTP method. The macros generate the protocol conformance and route table automatically.
 
 Register controllers in your application:
 
 ```swift
 var controllers: [any Controller] {
-    [UserController(), PostController()]
+    [ItemsController()]
 }
 ```
 
 ## Path parameters
 
-Both pages and controllers support path parameters with the `:param` syntax:
+Use `:param` syntax in route paths:
 
 ```swift
-static let path = "/users/:id"
+@Route(":id", method: .get)
+func show(_ ctx: RequestContext) async throws -> Response {
+    guard let id = ctx.pathParameters["id"] else {
+        return .error("Missing ID")
+    }
+    // ...
+}
+```
+
+Parameters are available on `ctx.pathParameters`.
+
+## RequestContext
+
+The `RequestContext` provides access to the incoming request:
+
+- `ctx.body` -- request body as `Data?`
+- `ctx.pathParameters` -- dictionary of path parameters
+- `ctx.request` -- the underlying HTTP request
+
+## Response helpers
+
+Controllers return `Response` values. Built-in helpers:
+
+```swift
+.json(encodable)                  // JSON-encode a Codable value
+.json(encodable, status: .created) // With custom status
+.error("message")                 // Error response
+.error("message", status: .notFound) // With custom status
+.ok                               // 200 with empty body
+.text("Hello")                    // Plain text
+.html("<h1>Hello</h1>")           // HTML string
 ```
 
 ## Route priority
 
-Routes are resolved in order:
+Routes resolve in this order:
 
-1. **Exact page matches** — static paths checked first
-2. **Parameterized pages** — paths with `:param` segments
-3. **Controller routes** — matched by path and HTTP method
-4. **Error page** — if no route matches
-
-The route table uses a trie data structure for efficient O(path-length) lookup.
+1. **Exact page matches** -- static paths checked first
+2. **Parameterized pages** -- paths with `:param` segments
+3. **Controller routes** -- matched by path and HTTP method
+4. **Error page** -- if no route matches

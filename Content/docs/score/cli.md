@@ -4,50 +4,60 @@ order: 9
 section: Tools
 ---
 
-The Score CLI provides commands for creating, developing, building, and deploying Score projects.
+The Score CLI provides commands for creating, developing, and building projects.
 
-## Commands
+## Creating a project
+
+The recommended way to start is with the GitHub CLI:
+
+```
+gh repo create my-site --template allegro-systems/score-template --private --clone
+cd my-site
+swift run score dev
+```
+
+This creates a private repo from the Score template with everything you need: `Package.swift`, a theme, a homepage, an example component, a CRUD controller, and localization support.
 
 ### score init
 
-Create a new Score project from a template:
+Alternatively, scaffold locally without creating a GitHub repo:
 
 ```
-swift run score init my-site
+score init my-site
+cd my-site
 ```
 
-Scaffolds a complete project structure with `Package.swift`, a theme, a home page, and example components.
-
-### score dev
+## score dev
 
 Start a development server with hot reload:
 
 ```
-swift run score dev --port 8080
+score dev
 ```
 
 The dev server:
 
 - Compiles your project in debug mode
-- Starts a local HTTP server
+- Starts a local HTTP server (default port 8080)
 - Watches `Sources/` and `Resources/` for file changes
 - Rebuilds and restarts automatically on change
 - Injects dev tools for component inspection and state debugging
 
 Options:
 
-- `--port <port>` — Server port (default: 8080)
-- `--no-devtools` — Disable dev tools injection
+- `--port <port>` -- server port (default: 8080)
+- `--no-devtools` -- disable dev tools injection
+- `--no-content-editor` -- disable the content editor at `/_content`
 
-### score build
+## score build
 
 Build the site for production:
 
 ```
-swift run score build
+score build
 ```
 
-This compiles in release mode and emits static output to the `.score` directory:
+Compiles in release mode and emits static output to the `.score` directory:
 
 ```
 .score/
@@ -64,17 +74,20 @@ This compiles in release mode and emits static output to the `.score` directory:
     └── images/
 ```
 
-CSS and JavaScript are chunked per-page with shared styles extracted automatically. Assets are fingerprinted for cache busting.
+CSS and JavaScript are chunked per-page with shared styles extracted automatically. Assets from `Resources/` are fingerprinted for cache busting and served from `/assets/`.
 
-### score deploy
+## Application configuration
 
-Deploy the built site to Stage:
+Your `Application` struct controls output directories:
 
+```swift
+@main
+struct MySite: Application {
+    var outputDirectory: String { ".score" }       // Build output (default)
+    var contentDirectory: String { "Content" }     // Markdown content
+    var resourcesDirectory: String { "Resources" } // Static assets
+}
 ```
-swift run score deploy
-```
-
-Runs the build step if needed, then uploads the `.score` directory to Stage's global CDN. Deployments are atomic — the new version goes live only after all assets are verified.
 
 ## Using with mise
 
@@ -97,7 +110,7 @@ rm -rf .score
 '''
 ```
 
-Then run tasks with:
+Then:
 
 ```
 mise run dev --port 3000

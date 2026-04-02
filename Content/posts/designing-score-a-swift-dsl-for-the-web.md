@@ -40,7 +40,7 @@ Text { "Hello" }
     .font(.mono, size: 14, weight: .medium, color: .accent)
     .padding(12, at: .horizontal)
     .background(.elevated)
-    .radius(4)
+    .border(radius: 4)
 ```
 
 Each modifier adds a scoped CSS rule. The framework collects them during rendering, deduplicates shared rules, and emits minimal stylesheets per page.

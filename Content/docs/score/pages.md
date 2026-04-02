@@ -4,7 +4,7 @@ order: 2
 section: Core Concepts
 ---
 
-A page is a struct that conforms to the `Page` protocol. Each page maps to a URL path and declares its content through a `body` property.
+Pages are structs that conform to the `Page` protocol. Each page declares a URL path and a body.
 
 ## Defining a page
 
@@ -13,17 +13,20 @@ struct AboutPage: Page {
     static let path = "/about"
 
     var body: some Node {
-        Heading(.one) { "About" }
-        Paragraph { "Learn more about us." }
+        Section {
+            Heading(.one) { "About Us" }
+            Paragraph { "We build things." }
+        }
+        .padding(40, at: .vertical)
     }
 }
 ```
 
-The `path` property defines the URL where the page is served. The `body` property uses `@NodeBuilder` syntax to compose the page's content from nodes.
+`path` is the URL. `body` uses `@NodeBuilder` syntax -- you can return multiple nodes, use `if/else`, `for` loops, and `switch` directly.
 
 ## Registering pages
 
-Pages are registered in your `Application` struct using the `@PageBuilder`:
+Pages go in your `Application` struct using `@PageBuilder`:
 
 ```swift
 @main
@@ -39,7 +42,7 @@ struct MySite: Application {
 
 ## Page metadata
 
-Pages can override application-level metadata:
+Override the application-level metadata on a per-page basis:
 
 ```swift
 struct AboutPage: Page {
@@ -48,7 +51,7 @@ struct AboutPage: Page {
     var metadata: (any Metadata)? {
         SiteMetadata(
             title: "About Us",
-            description: "Learn about our team and mission."
+            description: "Learn about our team."
         )
     }
 
@@ -58,17 +61,34 @@ struct AboutPage: Page {
 }
 ```
 
+Application-level metadata is set the same way on your `Application` struct:
+
+```swift
+var metadata: (any Metadata)? {
+    SiteMetadata(
+        site: "My Site",
+        title: "Home",
+        description: "A Score web application."
+    )
+}
+```
+
 ## Error pages
 
-Define a custom error page by conforming to the `ErrorPage` protocol:
+Define a custom error page with the `ErrorPage` protocol:
 
 ```swift
 struct NotFoundPage: ErrorPage {
+    var context: ErrorContext
+
     var body: some Node {
         Section {
             Heading(.one) { "404" }
             Paragraph { "Page not found." }
+            Link(to: "/") { "Go home" }
         }
+        .flex(.column, gap: 16, align: .center, justify: .center)
+        .size(minHeight: 600)
     }
 }
 ```
@@ -79,6 +99,46 @@ Register it in your application:
 var errorPage: (any ErrorPage.Type)? { NotFoundPage.self }
 ```
 
+The `ErrorContext` gives you access to the status code and request information.
+
+## Page groups with PageProvider
+
+As your app grows, organize related pages into groups using `PageProvider`:
+
+```swift
+struct ProductPages: PageProvider {
+    var pages: [any Page] {
+        [
+            ProductsPage(),
+            ScorePage(),
+            StagePage(),
+        ]
+    }
+}
+
+struct BlogPages: PageProvider {
+    var pages: [any Page] {
+        [
+            BlogPage(),
+        ]
+    }
+}
+```
+
+Use them in your application just like individual pages -- `@PageBuilder` accepts both:
+
+```swift
+@PageBuilder
+var pages: [any Page] {
+    HomePage()
+    AboutPage()
+    ProductPages()
+    BlogPages()
+}
+```
+
+This keeps your `Application` struct clean as you add more pages.
+
 ## Content pages
 
-For pages generated from markdown content files, see the [Content](/docs/score/content) documentation. Content pages let you generate multiple pages from a directory of markdown files without writing a `Page` struct for each one.
+For pages generated from Markdown files, use the `ContentPage` protocol. See the [Content](/docs/score/content) documentation for details.
