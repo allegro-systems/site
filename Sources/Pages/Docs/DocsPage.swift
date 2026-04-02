@@ -1,10 +1,11 @@
+import AllegroTheme
 import Score
 
 struct DocsPage: Page {
     static let path = "/docs"
 
     var body: some Node {
-        Layout {
+        Layout(pagePath: Self.path) {
             Section {
                 Heading(.one) { "Documentation" }
                     .font(.serif, size: 56, weight: .light, lineHeight: 1.15, color: .text, align: .center)
@@ -24,7 +25,7 @@ struct DocsPage: Page {
             Divider()
 
             Section {
-                SectionLabel(title: "Documentation")
+                SectionLabel("Documentation")
 
                 Stack {
                     DocCard(

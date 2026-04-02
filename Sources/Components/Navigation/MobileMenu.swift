@@ -1,3 +1,4 @@
+import AllegroTheme
 import Score
 import ScoreLucide
 
@@ -16,17 +17,18 @@ struct MobileMenu {
                 Icon("menu", size: 22, color: .text)
             }
             .on(.click, action: "toggle")
+            .accessibility(label: "Open menu")
             .cursor(.pointer)
 
             Stack {
                 Stack {
-                    Link(to: "/products") { Localized("nav.products") }
+                    Link(to: "/products") { t("nav.products") }
                         .font(.mono, size: 15, color: .text, decoration: TextDecoration.none)
-                    Link(to: "/docs") { Localized("nav.documentation") }
+                    Link(to: "/docs") { t("nav.documentation") }
                         .font(.mono, size: 15, color: .text, decoration: TextDecoration.none)
-                    Link(to: "/about") { Localized("nav.about") }
+                    Link(to: "/about") { t("nav.about") }
                         .font(.mono, size: 15, color: .text, decoration: TextDecoration.none)
-                    Link(to: "http://libretto.allegro.localhost/blog") { Localized("nav.blog") }
+                    Link(to: "https://libretto.allegro.systems/blog") { t("nav.blog") }
                         .font(.mono, size: 15, color: .text, decoration: TextDecoration.none)
                 }
                 .flex(.column, gap: 16)

@@ -2,14 +2,16 @@ import Score
 
 struct Layout<Content: Node>: Component {
     let content: Content
+    let pagePath: String
 
-    init(@NodeBuilder content: () -> Content) {
+    init(pagePath: String = "/", @NodeBuilder content: () -> Content) {
+        self.pagePath = pagePath
         self.content = content()
     }
 
     var body: some Node {
         Stack {
-            SiteHeader()
+            SiteHeader(pagePath: pagePath)
             Main { content }
             SiteFooter()
         }

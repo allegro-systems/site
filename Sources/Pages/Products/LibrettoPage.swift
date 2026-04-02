@@ -1,63 +1,64 @@
+import AllegroTheme
 import Score
 
 struct LibrettoPage: Page {
     static let path = "/libretto"
 
+    var metadata: (any Metadata)? {
+        SiteMetadata(
+            title: t("meta.libretto.title", default: "Libretto"),
+            description: t("meta.libretto.description", default: "A writing and publishing platform built on Score with Markdown editing, profiles, and Pro billing.")
+        )
+    }
+
     var body: some Node {
-        Layout {
+        Layout(pagePath: Self.path) {
             Section {
-                ProductPill(title: "Libretto", color: .libretto)
+                ProductPill("Libretto", color: .libretto)
 
-                Stack {
-                    Heading(.one) { "A Platform\nfor Writers" }
-                        .font(.serif, size: 56, weight: .light, lineHeight: 1.15, color: .text, align: .center, wrap: .balance)
-                        .size(maxWidth: 740)
-                        .compact { $0.font(size: 36) }
-                        .animate(.fadeIn, duration: 0.6)
+                Heading(.one) { t("libretto.hero.title", default: "A Platform\nfor Writers") }
+                    .font(.serif, size: 56, weight: .light, lineHeight: 1.15, color: .text, align: .center, wrap: .balance)
+                    .size(maxWidth: 740)
+                    .compact { $0.font(size: 36) }
+                    .animate(.fadeIn, duration: 0.6)
 
-                    Text { "Write, publish, and grow your audience" }
-                        .font(.mono, size: 15, color: .muted)
-                        .animate(.fadeIn, duration: 0.6, delay: 0.1)
-                }
-                .flex(.column, gap: 8, align: .center)
-
-                Paragraph { "A writing and publishing platform built on Score.\nMarkdown editor, profiles, likes, comments, and Pro billing." }
+                Paragraph { t("libretto.hero.description", default: "A writing and publishing platform built on Score.\nMarkdown editor, profiles, likes, comments, and Pro billing.") }
                     .font(.mono, size: 13, lineHeight: 1.6, color: .muted, align: .center)
                     .size(maxWidth: 520)
 
                 Stack {
-                    SiteButton(title: "Get Started \u{2192}", link: "http://libretto.allegro.localhost/login", variant: .primary(.libretto))
-                    SiteButton(title: "Read the Blog \u{2192}", link: "http://libretto.allegro.localhost/blog", variant: .secondary)
+                    SiteButton(title: "Get Started \u{2192}", link: "https://libretto.allegro.systems/login", variant: .primary(.libretto))
+                    SiteButton(title: "Read the Blog \u{2192}", link: "https://libretto.allegro.systems/blog", variant: .secondary)
                 }
                 .flex(.row, gap: 16, align: .center)
                 .compact { $0.flex(.column, gap: 12).size(width: .percent(100)) }
             }
             .flex(.column, gap: 24, align: .center, justify: .center)
             .size(height: 600)
-            .padding(80, at: .vertical)
             .padding(56, at: .horizontal)
             .backgroundGradient(.radial(color: .libretto, opacity: 0.04, width: 120, height: 80, at: .top))
-            .compact { $0.padding(80, at: .vertical).padding(20, at: .horizontal) }
+            .compact { $0.size(height: 500).padding(20, at: .horizontal) }
 
             Divider()
 
             Section {
-                Heading(.two) { "What You Get" }
+                Heading(.two) { t("libretto.features.title", default: "What You Get") }
                     .font(.serif, size: 32, weight: .light, color: .text)
                     .compact { $0.font(size: 28) }
 
                 Stack {
                     FeatureCard(
                         icon: "edit-3",
-                        title: "Markdown Editor",
-                        description: "A dual-mode editor with formatting toolbar, live preview, and auto-save. Write in Markdown with toolbar shortcuts for bold, italic, headings, links, and code.",
+                        title: t("libretto.feature.editor.title", default: "Markdown Editor"),
+                        description:
+                            t("libretto.feature.editor.description", default: "A dual-mode editor with formatting toolbar, live preview, and auto-save. Write in Markdown with toolbar shortcuts for bold, italic, headings, links, and code."),
                         accentColor: .libretto,
                         large: true
                     )
                     FeatureCard(
                         icon: "book-open",
-                        title: "Public Blog",
-                        description: "Published posts get their own URL, read-time estimates, and RSS feed. The blog page lists all published work with excerpts and author links.",
+                        title: t("libretto.feature.blog.title", default: "Public Blog"),
+                        description: t("libretto.feature.blog.description", default: "Published posts get their own URL, read-time estimates, and RSS feed. The blog page lists all published work with excerpts and author links."),
                         accentColor: .libretto,
                         large: true
                     )
@@ -68,14 +69,14 @@ struct LibrettoPage: Page {
                 Stack {
                     FeatureCard(
                         icon: "user",
-                        title: "Author Profiles",
-                        description: "Each writer gets a public profile with avatar, bio, social links, and a feed of their published posts.",
+                        title: t("libretto.feature.profiles.title", default: "Author Profiles"),
+                        description: t("libretto.feature.profiles.description", default: "Each writer gets a public profile with avatar, bio, social links, and a feed of their published posts."),
                         accentColor: .libretto
                     )
                     FeatureCard(
                         icon: "heart",
-                        title: "Likes and Comments",
-                        description: "Readers can like posts and leave comments. Counts are denormalized for fast rendering on listing pages.",
+                        title: t("libretto.feature.social.title", default: "Likes and Comments"),
+                        description: t("libretto.feature.social.description", default: "Readers can like posts and leave comments. Counts are denormalized for fast rendering on listing pages."),
                         accentColor: .libretto
                     )
                 }
@@ -85,14 +86,14 @@ struct LibrettoPage: Page {
                 Stack {
                     FeatureCard(
                         icon: "lock",
-                        title: "Magic Link Auth",
-                        description: "Sign in with email magic links, passkeys, or GitHub OAuth. No passwords to manage. Sessions are cookie-based and HTTP-only.",
+                        title: t("libretto.feature.auth.title", default: "Magic Link Auth"),
+                        description: t("libretto.feature.auth.description", default: "Sign in with email magic links, passkeys, or GitHub OAuth. No passwords to manage. Sessions are cookie-based and HTTP-only."),
                         accentColor: .libretto
                     )
                     FeatureCard(
                         icon: "credit-card",
-                        title: "Pro Plan",
-                        description: "Upgrade to Pro for extended features. Billing is handled through Revolut with checkout pages built into the app.",
+                        title: t("libretto.feature.pro.title", default: "Pro Plan"),
+                        description: t("libretto.feature.pro.description", default: "Upgrade to Pro for extended features. Billing is handled through Revolut with checkout pages built into the app."),
                         accentColor: .libretto
                     )
                 }
@@ -107,34 +108,38 @@ struct LibrettoPage: Page {
             Divider()
 
             Section {
-                Heading(.two) { "Highlights" }
+                Heading(.two) { t("libretto.highlights.title", default: "Highlights") }
                     .font(.serif, size: 32, weight: .light, color: .text)
                     .compact { $0.font(size: 28) }
 
                 Stack {
                     Stack {
-                        Heading(.three) { "Pure Score App" }
+                        Heading(.three) { t("libretto.highlight.score_app.title", default: "Pure Score App") }
                             .font(.serif, size: 20, weight: .light, color: .text)
 
-                        Paragraph { "Libretto is a standard Score application with controllers and pages. No special runtime. The same framework that renders the marketing site powers the writing platform." }
-                            .font(.mono, size: 13, lineHeight: 1.6, color: .muted)
+                        Paragraph {
+                            t("libretto.highlight.score_app.description", default: "Libretto is a standard Score application with controllers and pages. No special runtime. The same framework that renders the marketing site powers the writing platform.")
+                        }
+                        .font(.mono, size: 13, lineHeight: 1.6, color: .muted)
                     }
                     .flex(.column, gap: 12)
 
                     Stack {
-                        Heading(.three) { "ScoreData Persistence" }
+                        Heading(.three) { t("libretto.highlight.persistence.title", default: "ScoreData Persistence") }
                             .font(.serif, size: 20, weight: .light, color: .text)
 
-                        Paragraph { "All data is stored through ScoreData \u{2014} a pluggable persistence layer with SQLite as the default backend. The KVStore API uses hierarchical keys and typed wrappers, but the backend is swappable." }
-                            .font(.mono, size: 13, lineHeight: 1.6, color: .muted)
+                        Paragraph {
+                            t("libretto.highlight.persistence.description", default: "All data is stored through ScoreData \u{2014} a pluggable persistence layer with SQLite as the default backend. The KVStore API uses hierarchical keys and typed wrappers, but the backend is swappable.")
+                        }
+                        .font(.mono, size: 13, lineHeight: 1.6, color: .muted)
                     }
                     .flex(.column, gap: 12)
 
                     Stack {
-                        Heading(.three) { "RSS Built In" }
+                        Heading(.three) { t("libretto.highlight.rss.title", default: "RSS Built In") }
                             .font(.serif, size: 20, weight: .light, color: .text)
 
-                        Paragraph { "Every Libretto instance serves an RSS feed at /feed. Subscribe in any reader to follow new posts without an account." }
+                        Paragraph { t("libretto.highlight.rss.description", default: "Every Libretto instance serves an RSS feed at /feed. Subscribe in any reader to follow new posts without an account.") }
                             .font(.mono, size: 13, lineHeight: 1.6, color: .muted)
                     }
                     .flex(.column, gap: 12)
@@ -151,31 +156,31 @@ struct LibrettoPage: Page {
             Divider()
 
             Section {
-                Heading(.two) { "Built on the Allegro Stack" }
+                Heading(.two) { t("libretto.stack.title", default: "Built on the Allegro Stack") }
                     .font(.serif, size: 32, weight: .light, color: .text)
                     .compact { $0.font(size: 28) }
 
                 Stack {
                     Stack {
-                        Text { "FRAMEWORK" }
+                        Text { t("libretto.stack.framework.label", default: "FRAMEWORK") }
                             .font(.mono, size: 11, weight: .semibold, tracking: 0.05, color: .score)
-                        Paragraph { "Score renders pages and handles API routes. The same DSL used for the marketing site builds the editor, blog, and profile pages." }
+                        Paragraph { t("libretto.stack.framework.description", default: "Score renders pages and handles API routes. The same DSL used for the marketing site builds the editor, blog, and profile pages.") }
                             .font(.mono, size: 13, lineHeight: 1.6, color: .muted)
                     }
                     .flex(.column, gap: 8)
 
                     Stack {
-                        Text { "HOSTING" }
+                        Text { t("libretto.stack.hosting.label", default: "HOSTING") }
                             .font(.mono, size: 11, weight: .semibold, tracking: 0.05, color: .stage)
-                        Paragraph { "Stage deploys the binary and static files, manages the process lifecycle, and routes requests through its reverse proxy." }
+                        Paragraph { t("libretto.stack.hosting.description", default: "Stage deploys the binary and static files, manages the process lifecycle, and routes requests through its reverse proxy.") }
                             .font(.mono, size: 13, lineHeight: 1.6, color: .muted)
                     }
                     .flex(.column, gap: 8)
 
                     Stack {
-                        Text { "AUTH" }
+                        Text { t("libretto.stack.auth.label", default: "AUTH") }
                             .font(.mono, size: 11, weight: .semibold, tracking: 0.05, color: .libretto)
-                        Paragraph { "ScoreAuth provides magic links, passkeys, and session management. ScoreOAuth adds GitHub login. No external auth service." }
+                        Paragraph { t("libretto.stack.auth.description", default: "ScoreAuth provides magic links, passkeys, and session management. ScoreOAuth adds GitHub login. No external auth service.") }
                             .font(.mono, size: 13, lineHeight: 1.6, color: .muted)
                     }
                     .flex(.column, gap: 8)

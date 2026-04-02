@@ -42,7 +42,7 @@ struct ComingSoonDocsPage {
             .flex(.column)
             .padding(40, at: .vertical)
             .padding(56, at: .horizontal)
-            .flexItem(grow: 1)
+            .flex(grow: 1)
             .compact { $0.padding(20, at: .vertical).padding(20, at: .horizontal) }
         }
         .flex(.row)

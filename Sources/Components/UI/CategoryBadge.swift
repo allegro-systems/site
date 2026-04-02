@@ -10,6 +10,6 @@ struct CategoryBadge {
             .padding(3, at: .vertical)
             .padding(8, at: .horizontal)
             .background(.elevated)
-            .radius(3)
+            .border(radius: 3)
     }
 }

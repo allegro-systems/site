@@ -15,11 +15,11 @@ struct Counter {
 
     var body: some Node {
         Stack {
-            Text { "Count: " }
+            Text { "Count:" }
                 .font(.serif, size: 20, weight: .light, color: .text)
             $count
         }
-        .flex(.row, gap: 0, align: .baseline)
+        .flex(.row, gap: 6, align: .baseline)
 
         Button {
             Text { "Increment" }

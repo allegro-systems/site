@@ -1,3 +1,4 @@
+import AllegroTheme
 import Score
 
 /// Shared layout for product pages that are not yet available.
@@ -27,7 +28,7 @@ struct ComingSoonProductLayout {
         Layout {
             Section {
                 Stack {
-                    ProductPill(title: name, color: accentColor)
+                    ProductPill(name, color: accentColor)
                 }
                 .flex(.row, justify: .center)
 
@@ -43,12 +44,11 @@ struct ComingSoonProductLayout {
                     .font(.mono, size: 13, color: .dimmer, align: .center)
                     .size(maxWidth: descriptionMaxWidth)
             }
-            .flex(.column, gap: 16, align: .center)
-            .padding(120, at: .top)
-            .padding(48, at: .bottom)
+            .flex(.column, gap: 16, align: .center, justify: .center)
+            .size(height: 600)
             .padding(56, at: .horizontal)
             .backgroundGradient(gradient)
-            .compact { $0.padding(80, at: .top).padding(32, at: .bottom).padding(20, at: .horizontal) }
+            .compact { $0.size(height: 500).padding(20, at: .horizontal) }
 
             Section {
                 Text { highlights }
@@ -62,10 +62,10 @@ struct ComingSoonProductLayout {
             .compact { $0.padding(0, at: .vertical).padding(20, at: .horizontal) }
 
             Section {
-                Text { "COMING SOON" }
+                Text { t("coming_soon.badge", default: "COMING SOON") }
                     .font(.mono, size: 11, weight: .medium, tracking: 3, color: accentColor)
 
-                Heading(.two) { "What to Expect" }
+                Heading(.two) { t("coming_soon.features.title", default: "What to Expect") }
                     .font(.serif, size: 36, weight: .light, color: .text)
 
                 Stack {

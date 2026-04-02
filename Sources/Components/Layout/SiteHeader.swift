@@ -1,28 +1,33 @@
+import AllegroTheme
 import Score
 import ScoreLucide
-import AllegroTheme
 
 @Component
 struct SiteHeader {
+    let pagePath: String
+
+    init(pagePath: String = "/") {
+        self.pagePath = pagePath
+    }
 
     var body: some Node {
         Header {
             SiteLogo()
-                .flexItem(grow: 1)
+                .flex(grow: 1)
 
             Stack {
                 Navigation {
                     ProductsDropdown()
                     DocsDropdown()
 
-                    Link(to: "/about") { Localized("nav.about") }
+                    Link(to: "/about") { t("nav.about") }
                         .font(.mono, size: 13, color: .text, decoration: TextDecoration.none)
-                    Link(to: "http://libretto.allegro.localhost/blog") { Localized("nav.blog") }
+                    Link(to: "https://libretto.allegro.systems/blog") { t("nav.blog") }
                         .font(.mono, size: 13, color: .text, decoration: TextDecoration.none)
                 }
                 .flex(.row, gap: 24, align: .center, justify: .center)
             }
-            .flexItem(grow: 1)
+            .flex(grow: 1)
             .compact { $0.hidden() }
 
             Stack {
@@ -32,11 +37,11 @@ struct SiteHeader {
                 .flex(.row, align: .center)
                 .font(decoration: TextDecoration.none)
 
-                LanguageDropdown()
+                LanguageDropdown(pagePath: pagePath)
                 ThemeToggle()
             }
             .flex(.row, gap: 12, align: .center, justify: .end)
-            .flexItem(grow: 1)
+            .flex(grow: 1)
             .compact { $0.hidden() }
 
             MobileMenu()

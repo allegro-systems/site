@@ -3,10 +3,17 @@ import Score
 struct BlogPage: Page {
     static let path = "/blog"
 
+    var metadata: (any Metadata)? {
+        SiteMetadata(
+            title: t("meta.blog.title", default: "Blog"),
+            description: t("meta.blog.description", default: "Architectural notes, design decisions, and build updates from the Allegro team.")
+        )
+    }
+
     var body: some Node {
         let posts = ContentCollection(loading: "Content/posts").sorted(by: "date", ascending: false)
 
-        Layout {
+        Layout(pagePath: Self.path) {
             Section {
                 Heading(.one) { "Blog" }
                     .font(.serif, size: 48, weight: .medium, lineHeight: 1.05, color: .text, align: .center, wrap: .balance)
@@ -29,7 +36,7 @@ struct BlogPage: Page {
                     .padding(4, at: .vertical)
                     .padding(12, at: .horizontal)
                     .background(.elevated)
-                    .radius(3)
+                    .border(radius: 3)
                 for category in posts.uniqueValues(for: "category") {
                     Text { category }
                         .font(.mono, size: 13, color: .muted)
@@ -44,7 +51,7 @@ struct BlogPage: Page {
                 for (index, item) in posts.items.enumerated() {
                     BlogPostEntry(
                         category: item.frontMatter?.string("category") ?? "",
-                        date: DateFormatting.formatBlog(item.frontMatter?.string("date") ?? ""),
+                        date: (item.frontMatter?.string("date") ?? "").formatBlogDate(),
                         title: item.frontMatter?.string("title") ?? "",
                         excerpt: item.frontMatter?.string("excerpt") ?? "",
                         link: "/blog/\(item.slug)",

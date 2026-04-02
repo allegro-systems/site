@@ -1,3 +1,4 @@
+import AllegroTheme
 import Score
 
 @Component

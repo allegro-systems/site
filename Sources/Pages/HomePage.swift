@@ -1,18 +1,26 @@
+import AllegroTheme
 import Score
 
 struct HomePage: Page {
     static let path = "/"
 
+    var metadata: (any Metadata)? {
+        SiteMetadata(
+            title: t("meta.home.title", default: "Build and deploy Swift web apps"),
+            description: t("meta.home.description", default: "Score, Stage, Composer, and Libretto — a complete platform for building, deploying, and managing Swift web applications.")
+        )
+    }
+
     var body: some Node {
-        Layout {
+        Layout(pagePath: Self.path) {
             Section {
-                Heading(.one) { Localized("home.hero.title") }
+                Heading(.one) { t("home.hero.title") }
                     .font(.serif, size: 56, weight: .light, lineHeight: 1.15, color: .text, align: .center, wrap: .balance)
                     .size(maxWidth: 740)
                     .compact { $0.font(size: 36) }
                     .animate(.fadeIn, duration: 0.6)
 
-                Paragraph { Localized("home.hero.subtitle") }
+                Paragraph { t("home.hero.subtitle") }
                     .font(.mono, size: 15, lineHeight: 1.6, color: .muted, align: .center)
                     .size(maxWidth: 580)
                     .compact { $0.font(size: 13) }
@@ -26,16 +34,16 @@ struct HomePage: Page {
                 .compact { $0.flex(.column, gap: 12).size(width: .percent(100)) }
                 .animate(.fadeIn, duration: 0.6, delay: 0.3)
             }
-            .flex(.column, gap: 28, align: .center)
-            .padding(120, at: .vertical)
+            .flex(.column, gap: 28, align: .center, justify: .center)
+            .size(height: 600)
             .padding(56, at: .horizontal)
             .backgroundGradient(.radial(color: .accent, opacity: 0.04, width: 120, height: 80, at: .top))
-            .compact { $0.padding(80, at: .vertical).padding(20, at: .horizontal) }
+            .compact { $0.size(height: 500).padding(20, at: .horizontal) }
 
             Divider()
 
             Section {
-                SectionLabel(title: t("home.products"))
+                SectionLabel(t("home.products"))
                     .animateOnScroll(.fadeIn)
 
                 Stack {
@@ -54,7 +62,7 @@ struct HomePage: Page {
             Divider()
 
             Section {
-                SectionLabel(title: t("home.why_allegro"))
+                SectionLabel(t("home.why_allegro"))
                     .animateOnScroll(.fadeIn)
 
                 Stack {
@@ -85,7 +93,7 @@ struct HomePage: Page {
             .compact { $0.padding(60, at: .vertical).padding(20, at: .horizontal) }
 
             Section {
-                SectionLabel(title: t("home.docs"))
+                SectionLabel(t("home.docs"))
                     .animateOnScroll(.fadeIn)
 
                 Stack {

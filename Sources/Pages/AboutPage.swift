@@ -1,18 +1,26 @@
+import AllegroTheme
 import Score
 
 struct AboutPage: Page {
     static let path = "/about"
 
+    var metadata: (any Metadata)? {
+        SiteMetadata(
+            title: t("meta.about.title", default: "About"),
+            description: t("meta.about.description", default: "The principles and standards behind the Allegro platform.")
+        )
+    }
+
     var body: some Node {
-        Layout {
+        Layout(pagePath: Self.path) {
             Section {
-                Heading(.one) { "Our Philosophy" }
+                Heading(.one) { t("about.hero.title") }
                     .font(.serif, size: 56, weight: .light, lineHeight: 1.15, color: .text, align: .center, wrap: .balance)
                     .size(maxWidth: 740)
                     .compact { $0.font(size: 36) }
                     .animate(.fadeIn, duration: 0.6)
 
-                Paragraph { "We build tools for the long-term web \u{2014} software that respects the craft of development and the patience of good design." }
+                Paragraph { t("about.hero.subtitle") }
                     .font(.mono, size: 15, lineHeight: 1.6, color: .muted, align: .center)
                     .size(maxWidth: 640)
                     .compact { $0.font(size: 14) }
@@ -27,33 +35,20 @@ struct AboutPage: Page {
             Divider()
 
             Section {
-                SectionLabel(title: "Systems Thesis")
+                SectionLabel(t("about.thesis.title"))
 
-                Paragraph { "Six principles that guide every architectural decision we make." }
+                Paragraph { t("about.thesis.subtitle") }
                     .font(.mono, size: 15, lineHeight: 1.6, color: .muted)
 
                 Stack {
                     Stack {
                         AboutPrinciple(
-                            title: "Composition over inheritance",
-                            description: "Build complex behavior from small, predictable parts rather than deep class hierarchies."
+                            title: t("about.principle.composition"),
+                            description: t("about.principle.composition.desc")
                         )
                         AboutPrinciple(
-                            title: "Durability over novelty",
-                            description: "Choose boring technology that works reliably over shiny tools that may not last."
-                        )
-                    }
-                    .grid(columns: 2, gap: 20)
-                    .compact { $0.grid(columns: 1, gap: 16) }
-
-                    Stack {
-                        AboutPrinciple(
-                            title: "Transparency over magic",
-                            description: "Every abstraction should be inspectable. No hidden runtime behavior."
-                        )
-                        AboutPrinciple(
-                            title: "Vertical integration over glue",
-                            description: "Own the full stack from source to deployment. Fewer seams, fewer bugs."
+                            title: t("about.principle.durability"),
+                            description: t("about.principle.durability.desc")
                         )
                     }
                     .grid(columns: 2, gap: 20)
@@ -61,12 +56,25 @@ struct AboutPage: Page {
 
                     Stack {
                         AboutPrinciple(
-                            title: "Static analysis over runtime checks",
-                            description: "Catch errors at compile time. Type safety is the first line of defense."
+                            title: t("about.principle.transparency"),
+                            description: t("about.principle.transparency.desc")
                         )
                         AboutPrinciple(
-                            title: "Convention over configuration",
-                            description: "Sensible defaults that cover 90% of cases. Escape hatches for the rest."
+                            title: t("about.principle.integration"),
+                            description: t("about.principle.integration.desc")
+                        )
+                    }
+                    .grid(columns: 2, gap: 20)
+                    .compact { $0.grid(columns: 1, gap: 16) }
+
+                    Stack {
+                        AboutPrinciple(
+                            title: t("about.principle.static"),
+                            description: t("about.principle.static.desc")
+                        )
+                        AboutPrinciple(
+                            title: t("about.principle.convention"),
+                            description: t("about.principle.convention.desc")
                         )
                     }
                     .grid(columns: 2, gap: 20)
@@ -82,20 +90,20 @@ struct AboutPage: Page {
             Divider()
 
             Section {
-                SectionLabel(title: "Product Standards")
+                SectionLabel(t("about.standards.title"))
 
-                Paragraph { "How we think about the experience layer \u{2014} the interface between tool and human." }
+                Paragraph { t("about.standards.subtitle") }
                     .font(.mono, size: 15, lineHeight: 1.6, color: .muted)
 
                 Stack {
                     Stack {
                         AboutPrinciple(
-                            title: "Immediate feedback",
-                            description: "Every action should produce a visible result within milliseconds."
+                            title: t("about.standard.feedback"),
+                            description: t("about.standard.feedback.desc")
                         )
                         AboutPrinciple(
-                            title: "Low floor, high ceiling",
-                            description: "Easy to start, powerful enough for production. No training wheels that get in the way."
+                            title: t("about.standard.floor"),
+                            description: t("about.standard.floor.desc")
                         )
                     }
                     .grid(columns: 2, gap: 20)
@@ -103,12 +111,12 @@ struct AboutPage: Page {
 
                     Stack {
                         AboutPrinciple(
-                            title: "Zero config by default",
-                            description: "Ship with sensible defaults. Configuration is for overrides, not setup."
+                            title: t("about.standard.zeroconfig"),
+                            description: t("about.standard.zeroconfig.desc")
                         )
                         AboutPrinciple(
-                            title: "Docs are product",
-                            description: "Documentation is not an afterthought. It ships with the feature."
+                            title: t("about.standard.docs"),
+                            description: t("about.standard.docs.desc")
                         )
                     }
                     .grid(columns: 2, gap: 20)
@@ -122,23 +130,23 @@ struct AboutPage: Page {
             .compact { $0.padding(60, at: .vertical).padding(20, at: .horizontal) }
 
             Section {
-                SectionLabel(title: "What We Avoid")
+                SectionLabel(t("about.avoid.title"))
 
-                Paragraph { "Patterns we consciously reject. Not because they\u{2019}re always wrong,\nbut because they conflict with the experience we\u{2019}re building." }
+                Paragraph { t("about.avoid.subtitle") }
                     .font(.mono, size: 15, lineHeight: 1.6, color: .muted)
 
                 Stack {
                     Stack {
-                        AvoidItem(title: "Unsolicited autoplay")
-                        AvoidItem(title: "Modal interruptions")
-                        AvoidItem(title: "Tooltip dependency")
+                        AvoidItem(title: t("about.avoid.autoplay"))
+                        AvoidItem(title: t("about.avoid.modal"))
+                        AvoidItem(title: t("about.avoid.tooltip"))
                     }
                     .flex(.column, gap: 20)
 
                     Stack {
-                        AvoidItem(title: "Deep navigation")
-                        AvoidItem(title: "Loading spinners")
-                        AvoidItem(title: "Excessive decorative motion")
+                        AvoidItem(title: t("about.avoid.deepnav"))
+                        AvoidItem(title: t("about.avoid.spinners"))
+                        AvoidItem(title: t("about.avoid.motion"))
                     }
                     .flex(.column, gap: 20)
                 }

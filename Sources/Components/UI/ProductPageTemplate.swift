@@ -65,21 +65,13 @@ struct ProductPageTemplate {
                     ActionLink(
                         to: hero.primaryButton.link,
                         label: hero.primaryButton.title,
-                        large: true,
-                        background: hero.color,
-                        font: .mono,
-                        minWidth: 180,
-                        radius: 0
+                        large: true
                     )
                     ActionLink(
                         to: hero.secondaryButton.link,
                         label: hero.secondaryButton.title,
                         primary: false,
-                        large: true,
-                        opensInNewTab: hero.secondaryButton.opensInNewTab,
-                        font: .mono,
-                        minWidth: 180,
-                        radius: 0
+                        large: true
                     )
                 }
                 .flex(.row, gap: 16, align: .center)

@@ -4,7 +4,7 @@ struct StageDocsPage: Page {
     static let path = "/docs/stage"
 
     var body: some Node {
-        Layout {
+        Layout(pagePath: Self.path) {
             ComingSoonDocsPage(
                 product: "Stage",
                 accentColor: .stage,

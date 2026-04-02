@@ -4,7 +4,7 @@ struct ComposerDocsPage: Page {
     static let path = "/docs/composer"
 
     var body: some Node {
-        Layout {
+        Layout(pagePath: Self.path) {
             ComingSoonDocsPage(
                 product: "Composer",
                 accentColor: .composer,

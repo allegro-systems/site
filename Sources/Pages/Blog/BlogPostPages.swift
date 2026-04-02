@@ -6,12 +6,19 @@ struct BlogPostPages: ContentPage {
 
     var item: ContentCollection.Item
 
+    var metadata: (any Metadata)? {
+        SiteMetadata(
+            title: item.frontMatter?.string("title") ?? "Blog Post",
+            description: item.frontMatter?.string("excerpt") ?? "A post from the Allegro blog."
+        )
+    }
+
     var body: some Node {
-        Layout {
+        Layout(pagePath: Self.prefix + "/" + item.slug) {
             Section {
                 CategoryBadge(title: item.frontMatter?.string("category") ?? "")
 
-                Text { DateFormatting.formatBlog(item.frontMatter?.string("date") ?? "") }
+                Text { (item.frontMatter?.string("date") ?? "").formatBlogDate() }
                     .font(.mono, size: 12, tracking: 1, color: .dimmer)
 
                 Heading(.one) { item.frontMatter?.string("title") ?? "" }

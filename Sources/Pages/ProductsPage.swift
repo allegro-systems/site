@@ -1,18 +1,26 @@
+import AllegroTheme
 import Score
 
 struct ProductsPage: Page {
     static let path = "/products"
 
+    var metadata: (any Metadata)? {
+        SiteMetadata(
+            title: t("meta.products.title", default: "Products"),
+            description: t("meta.products.description", default: "Explore the Allegro platform — Score, Stage, Composer, and Libretto.")
+        )
+    }
+
     var body: some Node {
-        Layout {
+        Layout(pagePath: Self.path) {
             Section {
-                Heading(.one) { Localized("products.title") }
+                Heading(.one) { t("products.title") }
                     .font(.serif, size: 56, weight: .light, lineHeight: 1.15, color: .text, align: .center, wrap: .balance)
                     .size(maxWidth: 740)
                     .compact { $0.font(size: 36) }
                     .animate(.fadeIn, duration: 0.6)
 
-                Paragraph { Localized("products.subtitle") }
+                Paragraph { t("products.subtitle") }
                     .font(.mono, size: 15, lineHeight: 1.6, color: .muted, align: .center)
                     .size(maxWidth: 640)
                     .compact { $0.font(size: 14) }

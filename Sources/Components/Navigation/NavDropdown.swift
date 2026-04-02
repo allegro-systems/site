@@ -28,7 +28,7 @@ struct NavDropdownItem {
         .padding(12, at: .horizontal)
         .font(decoration: TextDecoration.none)
         .hover { $0.background(.elevated) }
-        .radius(6)
+        .border(radius: 6)
     }
 }
 
