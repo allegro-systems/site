@@ -45,11 +45,11 @@ This app is fully localized using Score's i18n system:
 - **String catalog:** `Localizable.xcstrings` — Xcode String Catalog format (JSON). Source language is `en`.
 - **Supported languages:** English, Spanish, German, French, Italian, Russian.
 - **Loading:** `App.swift` loads the catalog via `Localization(catalog: StringCatalog.load(from: "Localizable.xcstrings"))`.
-- **Usage in components:** Use `Localized("key")` to emit a translated `Node`, or `t("key")` to get a translated `String` for component props.
+- **Usage in components:** Use `t("key")` in node builder bodies and as component props.
 - **Routing:** Default locale (`en`) renders at `/`, others render at `/<locale>/` (e.g. `/fr/about`).
 - **Language switcher:** `LanguageDropdown` from allegro-theme reads supported locales from the string catalog automatically — no hardcoded locale list.
 - **Adding a language:** Add translations to `Localizable.xcstrings` under a new locale key. The dropdown and routing pick it up automatically.
-- **Adding a string:** Add the key to `Localizable.xcstrings` with translations for all supported locales, then use `Localized("key")` or `t("key")` in your component.
+- **Adding a string:** Add the key to `Localizable.xcstrings` with translations for all supported locales, then use `t("key")` in your component.
 
 ## Development
 
