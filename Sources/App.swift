@@ -1,8 +1,8 @@
+import AllegroTheme
 import Foundation
 import Score
 import ScoreLucide
 import ScoreOAuth
-import AllegroTheme
 
 /// The Allegro Systems marketing and documentation site.
 ///
@@ -21,36 +21,27 @@ struct AllegroSite: Application {
                     .github(
                         clientId: ProcessInfo.processInfo.environment["GITHUB_CLIENT_ID"] ?? "",
                         clientSecret: ProcessInfo.processInfo.environment["GITHUB_CLIENT_SECRET"] ?? ""
-                    ),
+                    )
                 ]
             ),
         ]
     }
 
-    var metadata: (any Metadata)? { nil }
-
-    // swiftlint:disable:next force_try
-    private static let _localization: Localization? = try! Localization(
-        catalog: StringCatalog.load(from: "Localizable.xcstrings")
-    )
-
-    var localization: Localization? { Self._localization }
+    var metadata: (any Metadata)? {
+        SiteMetadata(
+            site: "Allegro",
+            description: t("meta.description", default: "Build and deploy Swift web apps with Score, Stage, Composer, and Libretto."),
+            baseURL: "https://allegro.systems"
+        )
+    }
 
     @PageBuilder
     var pages: [any Page] {
         HomePage()
-        ProductsPage()
-        ScorePage()
-        StagePage()
-        ComposerPage()
-        LibrettoPage()
-        DocsPage()
-        ScoreDocsPages()
-        StageDocsPage()
-        ComposerDocsPage()
+        ProductPages()
+        DocPages()
         AboutPage()
-        BlogPage()
-        BlogPostPages()
+        BlogPages()
     }
 
     var errorPage: (any ErrorPage.Type)? { NotFoundPage.self }
